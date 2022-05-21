@@ -1,5 +1,5 @@
 # CovidRegistrace
-Program CovidRegistrace bude mít za účel provádět registraci pacientů na testování a očkování proti onemocnění COVID-19. Vstupem bude textový soubor obsahující seznam míst, kde se lze očkovat nebo testovat (spolu s dostupností jednotlivých vakcín a testů na daných lokacích). V programu půjde také zjistit kdy bude muset pacient na další očkování a na jak dlouho mu vydrží očkování nebo test. Pacient zadá do systému:
+Program CovidRegistrace bude mít za účel provádět registraci pacientů na testování a očkování proti onemocnění COVID-19. Vstupem bude textový soubor obsahující seznam míst, kde se lze očkovat nebo testovat. V programu půjde také zjistit kdy bude muset pacient na další očkování a na jak dlouho mu vydrží očkování nebo test. Pacient zadá do systému:
 * povinně
   * jméno
   * příjmení
