@@ -9,9 +9,8 @@ Program CovidRegistrace bude mít za účel provádět registraci pacientů na t
   * testovat
   * nebo jen zkontrolovat svůj stav očkování
 * Pokud se chce pacient očkovat nebo testovat: 
-  * Napíše město, ve kterém by se chtěl nechat očkovat
-  * Vybere si místo v daném městě z nabídky
-  * Vybere si jednu z dostupných vakcín nebo testů
+  * Napíše město a místo, ve kterém by se chtěl nechat očkovat
+  * Vybere si jednu vakcín nebo testů
   * Vybere si dostupný termín a čas
 
 Výstupem bude pdf soubor pro každé očkovací místo, kde bude setřízený seznam pacientů podle data příštího očkování/testování. Pro každého pacienta bude vygenerována pozvánka k očkování či testování s údaji o místu, typu očkování a datumu, který si vybrali.
