@@ -1,0 +1,228 @@
+﻿ockovaci_misto_id ockovaci_;misto;_nazev okres_nuts_kod operacni_status ockovaci_;misto;_adresa latitude longitude ockovaci_misto_typ nrpzs_kod minimalni_kapacita bezbarierovy_pristup
+7fd8c9d3-96af-4379-be5c-63849cf5e013 ; Poliklinika Anděl sro  Praha 5 - Smíchov; CZ0100 1 ;Nádražní 762/32  Praha 5 - Smíchov; 500616400 144095500 WALKIN 27381200000 130 1
+a3fe0313-50e9-48b5-b1eb-ff55500dd052 ; KV ARÉNA OČKOVACÍ CENTRUM; CZ0412 1 ;Západní 1812/73  Karlovy Vary; 502246786 128437961 SMPL 26365804000 20 1
+627db947-fed1-4458-a3d0-bd5bcbcfb936 ; Domažlická nemocnice; CZ0321 1 ;Kozinova 292; 494385100 129077800 SMPL 26361078000 50 1
+9580ad74-3ffb-45be-a0ec-9a5777c995b3 ; EliteMedical; CZ0100 1 ;Na Příkopě 859/22  110 00 Praha 1 - Nové Město; 500864122 144273183 SMPL 6070451000 85 1
+72cad4c0-1bd4-4e82-95e1-c1a7c4cb7413 ; FN Brno Bohunice; CZ0642 1 ;Jihlavská 340/20  62500 Brno - Bohunice; 491743812 165779806 SMPL 65269705000 20 1
+67e8578a-1b3c-4cce-b13d-d5419e091757 ; FN Ostrava - Poliklinika; CZ0806 1 ;17 listopadu 1790/5  Ostrava - Poruba  708 52; 498279700 181609358 SMPL 843989000 200 1
+415119fc-390b-4da4-9eae-ae6a3df29070 ; FN Plzeň; CZ0323 1 ;Fakultní nemocnice Plzeň  FN Bory pavilon 61  Edvarda Beneše 13  Plzeň; 497353128 133739317 SMPL 669806000 40 1
+604db149-75cf-455f-8630-a7e4cc2bbc01 ; Fakultní Thomayerova nemocnice; CZ0100 1 ;Vídeňská 800  Praha 4; 500300828 144597917 SMPL 64190000 70 1
+dfaa6e0d-6cc3-412e-9901-cff92ab21341 ; Fakultní nemocnice Bulovka; CZ0100 1 ;Budínova 67/2  18000 Praha 8 - Libeň; 501156581 144647050 SMPL 64211000 32 
+4068d898-89c6-4997-a3ec-fff6b593c80a ; Fakultní nemocnice Hradec Králové; CZ0521 1 ;Sokolská 581  Hradec Králové; 502003986 158269367 SMPL 179906000 0 1
+3c49bf4d-deca-4a77-8d13-0db97a1afe69 ; Fakultní nemocnice Královské Vinohrady; CZ0100 1 ;Šrobárova 50  10000 Praha 10 - Vinohrady; 500739136 144803297 SMPL 64173000 70 
+67442fd9-5aa3-4e69-ace2-f2ec243dd8ad ; Fakultní nemocnice Olomouc; CZ0712 1 ;I P Pavlova 185/6  77900 Olomouc - Nová Ulice; 495821869 172376208 SMPL 98892000 40 
+56483662-8ae5-4867-a7c5-7f3b37b81f0d ; Fakultní nemocnice u sv Anny Brno; CZ0642 1 ;Pekařská 53  60200 Brno; 491912400 165990900 SMPL 159816000 15 1
+f1daab10-1271-4647-91d2-783b1a6c5fab ; Fakultní nemocnice v Motole; CZ0100 1 ;V Úvalu 84/1  15000 Praha 5 - Motol; 500740167 143409881 SMPL 64203000 50 1
+fa93c823-e3e1-4dd1-86be-bfa37f237b5f ; IVF Czech Republic sro - Sanatorium Tomášov; CZ0724 1 ;U Lomu 638  760 01 Zlín; 492167472 176636294 SMPL 25594575001 20 1
+514779e3-bcf6-41c9-9c5f-03e416cee319 ; Krajská nemocnice T Bati  a s - 20 pavilon (infekční ambulance); CZ0724 1 ;Havlíčkovo nábřeží 600  Zlín  762 75; 492284786 176977061 SMPL 27661989000 30 1
+a486cb4a-76ca-49e1-a9dc-757fd298770c ; Luhačovice - Zdravotní středisko; CZ0724 1 ;Masarykova 315  763 26 Luhačovice; 491000700 177576000 SMPL 25594575001 20 1
+a6c1ca7b-3f5a-4de8-8a8c-78676a9f89a2 ; Masarykova nemocnice v Ústí nad Labem; CZ0427 1 ;Hoření 3083/13  400 11 Ústí nad Labem - Severní Terasa  Česko; 506806681 140168097 SMPL 25488627010 15 
+b0dd8d4a-bbd7-4a79-a181-4e3cbc44aa8e ; Medica JM - Poliklinika Michnova; CZ0100 1 ;Michnova 1622/4  149 00 Praha 4; 500313361 145206247 SMPL 3486788001 0 
+e65464ae-37e3-4890-a1b8-1336fce33c9a ; Nemocnice Boskovice sro; CZ0641 1 ;Otakara Kubína 179  680 01 Boskovice; 494909900 166430600 SMPL 26925974000 20 1
+65ec5e61-f003-474d-8e78-14ec4d045e91 ; Nemocnice Jindřichův Hradec - OČKO centrum; CZ0313 1 ;U Nemocnice 380/III  Jindřichův Hradec 37701; 491396447 150048061 SMPL 26095157000 0 
+24e4792b-ba40-4470-a5bb-8fc4931ea176 ; Nemocnice Kadaň sro; CZ0422 1 ;Golovinova 1559  Kadaň 432 01; 503912239 132701558 SMPL 25479300000 50 1
+69c8fb40-911c-4c1d-b4d3-288aa0449cd7 ; Nemocnice Litoměřice  oz (KZ as) - nemocnice; CZ0423 1 ;Žitenická 2084  41201 Litoměřice - Předměstí; 505408944 141434003 SMPL 6199518000 50 1
+6cef45f8-c79e-44f0-84b1-def39b85166c ; Nemocnice Pardubice; CZ0532 1 ;Kyjevská 44  Pardubice 532 03; 500300244 157875883 SMPL 27520536000 10 
+69af79aa-38ba-40b0-97fc-a1b3786bddfd ; Nemocnice Rudolfa a Stefanie Benešov  as; CZ0201 1 ;Máchova 400; 497873358 146811406 SMPL 27253236000 10 1
+e9cfbc2e-87cd-419a-aece-a4d7a1873d43 ; Nemocnice Strakonice - OČKO centrum  Radomyšlská 336  budova lékárny; CZ0316 1 ;Radomyšlská 336  386 01 Strakonice; 492647133 139064961 SMPL 26095181000 0 
+4f9ac06e-87de-4daa-85e6-9587ba65babb ; Nemocnice Tišnov; CZ0643 1 ;Purkyňova 2010  Tišnov; 493469664 164336694 SMPL 44947909000 0 1
+079dc95c-e989-4acd-8226-0968977d8667 ; Nemocnice ve Frýdku-Místku  po; CZ0802 1 ;ElKrásnohorské 321  Frýdek  73801  Frýdek-Místek; 496906522 183563672 SMPL 534188000 0 
+2e4005c3-6f76-4f38-88d0-0974b68c8113 ; Oblastní nemocnice Mladá Boleslav - DPS  Havlíčkova 71; CZ0207 1 ;DPS  Havlíčkova 71  293 01 Mladá Boleslav II; 504173028 149056447 SMPL 27256456000 21 1
+46fd9fcc-d311-402e-a645-56f181bdb3d7 ; Oblastní nemocnice Náchod as; CZ0523 1 ;Purkyňova 446  547 01 Náchod; 504102139 161670608 SMPL 26000202000 12 1
+75945398-f8b9-41f3-b573-7fb727dab176 ; Očkovací centrum Liberec (KNL); CZ0513 1 ;Areál KNL  Husova 10  Liberec;   SMPL 27283933000 26 
+548b1627-8a1c-47a1-a099-fa9c2a4601e7 ; Poliklinika Anděl sro  Praha 5 - Smíchov; CZ0100 1 ;Nádražní 762/32  Praha 5 - Smíchov; 500616400 144095500 SMPL 27381200000 0 1
+6599aa66-ca02-4816-bc95-5936d5dc2ce3 ; Všeobecná fakultní nemocnice  v Praze; CZ0100 1 ;U Nemocnice 499/2  128 08 Praha 2  Očkovací centrum ve Fakultní poliklinice  Karlovo náměstí 32  III patro; 500764067 144212458 SMPL 64165000 35 
+df8ee09d-46ce-4102-a42a-12c1269a4e83 ; BLUEDENT BRNO SLATINA - Očkovací centrum; CZ0642 1 ;Matlachova 234/24  Brno-Slatina  62700; 491772100 166901100 OČM 2356635000 500 
+fb7b6c4d-d314-4065-8525-2c81c6c824af ; Endipra sro  Hlinsko; CZ0531 1 ;Nádražní 548  Hlinsko; 497660028 159015319 OČM 2443198000 100 1
+bd210d82-5f1e-4721-a498-e14b6ad4dc3b ; FN Brno Bohunice; CZ0642 1 ;Jihlavská 340/20  62500 Brno - Bohunice; 491743812 165779806 OČM 65269705000 200 1
+688518e9-240b-4b84-b074-38806f74abd7 ; FYZIOklinika  Praha 11 Chodov  Machkova 1642/2; CZ0100 1 ;Machkova 1642/2  Praha 11  Chodov; 500326878 145132733 OČM 24222101000 50 
+6db89399-361a-4c78-b95c-5368a3acec03 ; Fakultní Thomayerova nemocnice B1; CZ0100 1 ;Vídeňská 800  Praha 4; 500300828 144597917 OČM 64190000 100 1
+54f8c165-fc1d-4493-9da5-91790def7991 ; Fakultní nemocnice Olomouc; CZ0712 1 ;IPPavlova 185/6; 495821869 172376208 OČM 98892000 50 1
+9e7182ed-4f86-48a4-86ef-b92a6b08928c ; Fakultní nemocnice Plzeň - očkovací místo; CZ0323 1 ;Edvarda Beneše 13  305 99 Plzeň; 497353128 133739317 OČM 669806000 50 1
+9ed7dbb5-54d8-4064-b004-e8d708d85963 ; GHC GENETICS  sro - Praha 8 Libeň; CZ0100 1 ;V Holešovičkách 29; 501176147 144589072 OČM 28188535000 100 1
+8e8e4efa-1d7c-478d-ac6b-e9ae26cea782 ; GHC Genetics - Jesenická poliklinika; CZ0711 1 ;Dukelská 456/13  790 01 Jeseník; 502261314 172003969 OČM 28188535000 0 
+c2293eda-31df-47b7-a1b9-f2a7f439e201 ; ImunoGen sro; CZ0100 1 ;Sluneční náměstí 15  Praha 13; 500503111 143434461 OČM 6686630000 50 1
+20243795-7b8b-417a-ad3d-ca786defbdec ; KV ARÉNA OČKOVACÍ CENTRUM; CZ0412 1 ;Západní 1812/73  Karlovy Vary; 502246786 128437961 OČM 26365804000 50 1
+3c6b2b17-5e39-4ebd-9fdc-4299380d83cd ; Litomyšlská nemocnice; CZ0533 1 ;Jana Evangelisty Purkyně 652  570 01 Litomyšl; 498634561 163132058 OČM 27520579000 30 
+f0bab558-2ace-4a40-9264-0a82978ed845 ; Luhačovice - Zdravotní středisko; CZ0724 1 ;Masarykova 315  763 26 Luhačovice; 491000700 177576000 OČM 25594575001 100 1
+7e65f8ba-a68b-4720-bb7e-d1efdca32ba5 ; Masarykova městská nemocnice as (Jilemnice); CZ0514 1 ;Metyšova 372  51401 Jilemnice; 506097550 155037667 OČM 5421888000 30 1
+2a70b008-d5d4-4962-8f96-74e9556e0c9e ; Masarykova nemocnice v Ústí nad Labem (KZ as) - nemocnice; CZ0427 1 ;Sociální péče 3316/12A  Ústí nad Labem; 506804958 140168081 OČM 25488627010 100 1
+c8c13776-22fb-42e7-a4b6-2c5b5d3b0e0f ; Masarykova nemocnice v Ústí nad Labem (KZ as) - pracoviště RUMBURK; CZ0421 1 ;U Nemocnice 1298/6  Rumburk; 509488950 145472764 OČM 829048015 100 1
+7c03c0b5-ce98-4b58-a844-4bf51a3811a7 ; Nemocnice AGEL Jeseník as; CZ0711 1 ;Lipovská 103/39  790 01 Jeseník; 502287914 171988036 OČM 47973927000 0 
+cf2a9e78-a2dc-44ac-ba39-bd2b1bfb5521 ; Nemocnice AGEL Nový Jičín as - Vakcinační centrum pro veřejnost; CZ0804 1 ;K Nemocnici 1886/57; 495870456 180065553 OČM 25886207000 300 
+85d94f67-71dd-4fa3-8ab3-359a74ab8b02 ; Nemocnice Chomutov (KZ  as) - nemocnice; CZ0422 1 ;Kochova 1185  430 12  Chomutov; 504556889 134099056 OČM 25488627050 100 1
+53701bba-3bd8-4529-8da9-0002ac2a1f36 ; Nemocnice Děčín (KZ as) - nemocnice; CZ0421 1 ;U nemocnice 1  Děčín II  405 99; 507813872 142265086 OČM 25488627020 100 1
+25a7b1a6-2cdf-42cd-b86c-ef969f834104 ; Nemocnice Hranice; CZ0714 1 ;Zborovská 1245  75301 Hranice I-Město; 495552825 177448519 OČM 47677406000 70 
+d70841fb-f18a-4355-a033-fc7bac62c539 ; Nemocnice Jablonec n Nisou; CZ0512 1 ;Očkovací centrum Nemocnice Jablonec nad Nisou  Nemocniční 15  Jablonec nad Nisou; 507294142 151597242 OČM 829838000 70 1
+af769ff4-7397-44e2-9685-38545824bc84 ; Nemocnice Most (KZ  as) - nemocnice; CZ0425 1 ;J E Purkyně 270  Most  434 64; 505089506 136445933 OČM 25488627040 100 1
+9b5fe9b6-90e9-4aa7-8666-4e614d6ab888 ; Nemocnice Rudolfa a Stefanie Benešov  as; CZ0201 1 ;Máchova 400  Benešov 256 01; 497873358 146811406 OČM 27253236000 30 1
+c38cb2aa-0c80-4625-862c-3067e00129d1 ; Nemocnice Teplice (KZ  as) - nemocnice; CZ0426 1 ;Duchcovská 53  Teplice; 506362572 138094867 OČM 25488627030 80 1
+3f19ddcb-3caf-475d-8dd3-0771bd74e03b ; Nemocnice Třinec; CZ0802 1 ;Kaštanová 268  739 61 Třinec - Dolní Líštná; 496747567 186907022 OČM 534242000 30 1
+355ca18b-4482-4da8-8dad-d61202b68975 ; Nemocnice Vyškov  p o; CZ0646 1 ;Purkyňova 235/36; 492748858 169831514 OČM 839205000 0 
+bd76a726-4d9e-42d2-8a37-3033d4d76b1b ; Oblastní nemocnice   DPS Havlíčkova 71; CZ0207 1 ;DPS  Havlíčkova 71  293 01 Mladá Boleslav II; 504173028 149056447 OČM 27256456000 100 1
+97a5d3f0-a9fc-4104-bcc3-7b7f2a900c89 ; Oblastní nemocnice Kolín - očkovací místo; CZ0204 1 ;U nemocnice  321  280 02 Kolín; 500205100 151958400 OČM 27256391000 60 1
+9de63f55-4e38-4c86-93fc-84c539cbcae9 ; Očkovací centrum Liberec (KNL); CZ0513 1 ;Areál KNL  Husova 10  Liberec;   OČM 27283933000 396 1
+c536f66c-3ebd-4e61-9443-173da1f6700e ; Sdružené zdravotnické zařízení Krnov  p o - pediatrické odd; CZ0801 1 ;I P Pavlova 552/9  79401 Krnov - Pod Bezručovým vrchem; 500965919 176892661 OČM 844641001 0 1
+7a2eb859-6837-4c44-8cdc-6e55dd63a43e ; Slezská nemocnice v Opavě  po; CZ0805 1 ;Slezská nemocnice v Opavě  Olomoucká 470/86; 499341178 178773239 OČM 47813750000 25 1
+6671514e-20da-47c4-8d41-55074fd22f1e ; Urogyn Medico sro; CZ0100 1 ;Wilsonova 301/10  110 00 Praha 2 - Vinohrady; 500848856 144365322 OČM 8760411000 6 1
+db392f2d-3b84-46a5-8248-7d882ef766d0 ; Vsetínská nemocnice as; CZ0723 1 ;Nemocniční 995  755 01 Vsetín; 493309844 179990031 OČM 26871068000 10 1
+26e57ae6-0e44-4759-b80d-4eb30f3fd752 ; Poliklinika Třešť spol sro; CZ0632 1 ;Palackého 1334 58901 Třešť; 492854428 154813150 OČM 49434691000 0 1
+2f060f0b-e985-4338-8793-d4bd79f422ca ; Krajská nemocnice T Bati  a s - 20 pavilon (infekční ambulance); CZ0724 1 ;Havlíčkovo nábřeží 600  Zlín  762 75; 492284644 176976953 OČM 27661989000 70 
+4e098bf0-700e-4bae-bade-d52b29ca5ff1 ; FN Ostrava - Klinika dětského lékařství; CZ0806 1 ;17 listopadu 1790/5  Ostrava - Poruba  708 52; 498279700 181609358 OČM 843989000 0 1
+d8977459-0d26-4a3e-a555-1c7475b68cd6 ; Fakultní nemocnice Plzeň - očkovací místo; CZ0323 1 ;Edvarda Beneše 13  305 99 Plzeň; 497353128 133739317 ZAJEMDETI 669806000 20 1
+349c5c91-fcb3-488a-8cb4-d8e6dff4a842 ; Očkovací centrum Liberec (KNL); CZ0513 1 ;Areál KNL  Husova 10  Liberec;   OČM 27283933000 54 1
+86ed40c5-ffa1-4a83-b81d-710f039bf122 ; EUC Klinika Plzeň - Denisovo nábřeží  Plzeň; CZ0323 1 ;Denisovo nábř 1000/4  301 00 Plzeň 3; 497445894 133828183 OČM 25202171000 0 
+447beb61-1eda-4cfd-9ba8-d62d17b4278e ; FN Ostrava - Poliklinika; CZ0806 1 ;17 listopadu 1790/5  Ostrava - Poruba  708 52; 498279700 181609358 OČM 843989000 600 1
+df82745a-539b-4c91-811f-26ebd28e5c8b ; Fakultní nemocnice Hradec Králové; CZ0521 1 ;Sokolská 581  50003 Hradec Králové - Nový Hradec Králové; 501983958 158272881 OČM 179906000 30 1
+4c450d0d-4f5a-40dc-a980-74d55f082bc5 ; Nemocnice Rychnov nad Kněžnou; CZ0524 1 ;Jiráskova 506  51601 Rychnov nad Kněžnou; 501639672 162762450 OČM 26000202009 20 1
+469782a0-01b7-4932-8b32-8f3f9d67a1e4 ; Sušická nemocnice; CZ0322 1 ;Chmelenská 117  Sušice III  342 01 Sušice; 492302800 135264300 OČM 8176302000 50 1
+c0c8dfa0-7bbb-4f9e-a2a2-366a3fde306b ; Endipra sro  Hlinsko; CZ0531 1 ;Nádražní 548  Hlinsko; 497660028 159015319 OČM 2443198000 100 1
+7f6274a7-e9e7-4917-b200-a937a680a256 ; FN Brno Bohunice; CZ0642 1 ;Jihlavská 340/20  62500 Brno - Bohunice; 491743812 165779806 OČM 65269705000 200 
+cfafd5d9-9b97-40bf-9de0-52a987281847 ; Fakultní Thomayerova nemocnice - pavilon G2; CZ0100 1 ;Vídeňská 800  Praha 4; 500284386 144591625 OČM 64190000 100 
+2a5e483a-4817-489c-9227-49fc9b51b2c8 ; Fakultní nemocnice Olomouc; CZ0712 1 ;IPPavlova 185/6  77900 Olomouc; 495809572 172380378 OČM 98892000 80 1
+9c07c7fe-4575-4685-ae1f-227b2e9b5e75 ; Nemocnice AGEL Nový Jičín as - Vakcinační centrum pro veřejnost; CZ0804 1 ;K Nemocnici 1886/57; 495870456 180065553 OČM 25886207000 0 
+a519c82b-f372-4888-8994-12e216a248b5 ; Nemocnice Jablonec n Nisou; CZ0512 1 ;Očkovací centrum Nemocnice Jablonec nad Nisou  Nemocniční 15  Jablonec nad Nisou; 507294142 151597242 OČM 829838000 18 1
+edcd0b1d-dd56-4fc5-a901-bcb0d9d02e13 ; Nemocnice Karlovy Vary; CZ0412 1 ;Bezručova 1190/19  360 01 Karlovy Vary; 502321753 128752203 OČM 26365804000 100 1
+b643ba3e-af00-4833-8c98-b6ca16fcc974 ; Nemocnice Vyškov  p o; CZ0646 1 ;Purkyňova 235/36; 492748858 169831514 OČM 839205000 0 
+89a64b0a-4ee9-4fa3-a06d-f9620818a04c ; Oblastní nemocnice Mladá Boleslav - DPS  Havlíčkova 71; CZ0207 1 ;DPS  Havlíčkova 71  293 01 Mladá Boleslav II; 504173028 149056447 OČM 27256456000 0 1
+5ebd20f4-ad33-49ed-a371-afdba43d937b ; Vakcinační centrum COVID19 - nemocnice Nymburk; CZ0208 1 ;Boleslavská třída 425/9  288 02 Nymburk; 501868672 150374489 OČM 28762886000 0 1
+6759fec3-8835-4b32-836c-ba03b4e3d919 ;  Nemocnice Litoměřice  oz (KZ  as) - nemocnice; CZ0423 1 ;Žitenická 2084  41201 Litoměřice - Předměstí; 505407614 141432286 OČM 6199518000 300 1
+89dd44a6-fc1d-4255-9a71-a100987f6d1f ; Bohumínská městská nemocnice  as; CZ0803 1 ;Slezská 207  Bohumín; 499174400 183352500 OČM 26834022000 24 1
+a7958ccf-8ded-4d76-af5e-2424a0bbacb9 ; CLINICUM as - Kongresové centrum Praha; CZ0100 1 ;5 května 1640/65  140 21 Praha 4; 500625194 144296664 OČM 25093126000 500 1
+19d19d80-50b3-4858-80a6-2c1c6da6444f ; Centrum zdravotní péče Jirny; CZ0209 1 ;Tovární 19  250 90 Jirny; 501156000 146992000 OČM 25606328000 30 1
+008f04e8-8ba1-420e-8dc3-971bddaff0ea ; Chrudimská nemocnice; CZ0531 1 ;Václavská 570  537 27 Chrudim; 499417778 158069425 OČM 27520561000 100 1
+f61f9b60-4f13-4a70-866f-78c36df9b12a ; Domažlická nemocnice; CZ0321 1 ;Kozinova 292; 494385100 129077800 OČM 26361078000 60 1
+e41fb30c-17f0-4816-9986-7152f44d5251 ; EUC Klinika České Budějovice  sro - Poliklinika JIH; CZ0311 1 ;Matice Školské  1789/17  370 01 České Budějovice; 489666000 144760900 OČM 62525107000 70 
+a3411c0b-e843-44f4-bdef-f1726c9be219 ; Fakultní Nemocnice Bulovka; CZ0100 1 ;Budínova 67/2  18000 Praha 8 - Libeň; 501156581 144647050 OČM 64211000 30 1
+3719077c-ec1f-4497-9ac1-93e447840e84 ; Fakultní nemocnice v Motole; CZ0100 1 ;V Úvalu 84/1  15000 Praha 5 - Motol; 500740167 143409881 OČM 64203000 100 1
+e016ea1d-dd0e-4821-8bd7-4e077d7fdf43 ; IMMUNO-FLOW sro; CZ0100 1 ;Rychnovská 651  Praha 9 Letnany; 501363439 145103592 OČM 62415522000 250 1
+f9a99680-5def-4626-8249-d53288e966ae ; ImunoSantana spol s ro; CZ0411 1 ;Májová 582/19  350 02 Cheb; 500756700 123698400 OČM 25687794000 20 1
+5de1c6de-79ed-4a58-b805-5b68712d907c ; Klatovská nemocnice; CZ0322 1 ;Klatovská nemocnice  Plzeňská 929  Klatovy; 494041700 132921900 OČM 26360527000 20 1
+1e2df6b7-dbc9-4abe-959a-846cafbb87e7 ; Kroměřížská nemocnice as; CZ0721 1 ;Kroměřížská nemocnice as  Havlíčkova 660/69  76701 Kroměříž; 491731038 172247771 OČM 27660532000 80 1
+6726967d-c167-4e29-9528-611dac7e363d ; LRS Chvaly  ops; CZ0100 1 ;Stoliňská 920  193 00; 501084331 145915319 OČM 24805807000 50 
+43e1df1f-0cec-4bf2-abd8-285a84485d05 ; MEDICAL PLUS  sro; CZ0722 1 ;Obchodní 1507  686 01 UhHradiště; 490696700 174628900 OČM 27700453000 12 1
+de7b4c28-8242-4a28-bbaf-7f27fde03978 ; MUDr Radoslav Svoboda sro - Seč; CZ0531 1 ;Chrudimská 94  53807 Seč; 498473000 156590600 OČM 28782089000 50 
+3d144b8f-e833-415b-bd60-d99d3f9e9693 ; Mělnická zdravotní  as; CZ0206 1 ;Pražská 528  276 01 Mělník; 503482825 144849831 OČM 27958639000 0 1
+cf2b43c4-0fdf-4c9e-8e30-79f69031c168 ; Městská nemocnice Ostrava  po  Vakcinační centrum; CZ0806 1 ;Janovského 2825/8  Ostrava-Moravská Ostrava; 498319331 182757114 OČM 635162000 30 1
+d596756d-6ad2-4ca0-a148-d8f82aac94c6 ; Nemocnice Boskovice sro; CZ0641 1 ;Otakara Kubína 179  680 01 Boskovice; 494909900 166430600 OČM 26925974000 100 1
+26878d6a-abc6-4f94-8607-a9b1ea7b36d5 ; Nemocnice Břeclav; CZ0644 1 ;U Nemocnice 3066/1 Břeclav; 487529547 168807483 OČM 390780000 190 1
+f99da28f-8450-42c0-abfe-73df4e777b7f ; Nemocnice Havlíčkův Brod; CZ0631 1 ;Husova 2624  580 22 Havlíčkův Brod; 496094800 155712758 OČM 179540000 200 1
+e803e7d4-3c1c-462e-8025-8f8d33232fac ; Nemocnice Havířov  po OČKO; CZ0803 1 ;Dělnická 1132/24   736 01 Havířov; 497833794 184363747 OČM 844896000 200 1
+4c370223-fc0e-4700-98d6-08dd9a1b6acd ; Nemocnice Jindřichův Hradec - OČKO centrum; CZ0313 1 ;U Nemocnice 380/III  Jindřichův Hradec 37701; 491396447 150048061 OČM 26095157000 50 1
+6cb1fb65-9834-430e-bf22-4e8f4e5705e5 ; Nemocnice Kadaň sro; CZ0422 1 ;Golovinova 1559  Kadaň 432 01; 503912239 132701558 OČM 25479300000 100 1
+ae73633d-e60c-4d39-a88a-c26d791c4642 ; Nemocnice Kyjov  příspěvková organizace; CZ0645 1 ;Strážovská 1247/22  Kyjov 69701; 490070983 171104022 OČM 226912000 0 
+8741cd1d-a6c4-4e5b-a0c7-19eb94c4e957 ; Nemocnice Pardubice; CZ0532 1 ;Kyjevská 44  Pardubice 532 03; 500300244 157875883 OČM 27520536000 90 1
+5a7edb0a-3b7d-406f-bfb2-b8756f4db29c ; Nemocnice Pelhřimov; CZ0633 1 ;Slovanského bratrství 710  393 01 Pelhřimov; 494339769 152311142 OČM 511951000 100 1
+5a4df8c6-d166-45b6-9665-737267b36910 ; Nemocnice Prachatice - OČKO; CZ0315 1 ;Nebahovská 1015   383 01 Prachatice; 490077292 140101236 OČM 26095165000 300 1
+ed469421-4e04-446e-82b3-e025dec8f78c ; Nemocnice Písek - OČKO; CZ0314 1 ;Karla Čapka 2459  397 01 Písek; 493042100 141555400 OČM 26095190000 100 1
+d8d9fa89-d7e1-41e6-b5a8-472fb48bcc7b ; Nemocnice Strakonice - OČKO centrum  Radomyšlská 336  budova lékárny; CZ0316 1 ;Radomyšlská 336  386 01 Strakonice; 492647133 139064961 OČM 26095181000 250 1
+9e9a9391-a83b-4b78-aca9-2d2a9d70c03c ; Nemocnice TGM Hodonín  po Purkyňova 2731/11 Hodonín 695 01; CZ0645 1 ;Nemocnice TGM Hodonín  Purkyňova 2731/11 Hodonín 695 01; 488645394 171446758 OČM 226637000 10 1
+1655bb04-e7fa-45e9-aeab-a77e84c8d31f ; Nemocnice Tábor - OČKO areál nemocnice  budova F  kpt Jaroše 2000  39003 Tábor; CZ0317 1 ;Kpt Jaroše 2000  10  390 03 Tábor; 494170558 146543089 OČM 26095203000 250 
+8dbd1ffd-cce1-4aa3-9be9-928f8de6fa73 ; Nemocnice Třebíč; CZ0634 1 ;Purkyňovo nám 133/2  674 01 Třebíč; 492122300 158894300 OČM 839396000 50 1
+966819da-a885-4d82-9053-6965ffcf8d5a ; Nemocnice Znojmo  budova H; CZ0647 1 ;MUDr Jana Janského 11  669 02 Znojmo; 488694403 160508003 OČM 92584000 100 1
+1d09cb00-c8d9-4d13-bc39-293f2d52d5c8 ; Nemocnice ve Frýdku-Místku  po; CZ0802 1 ;ElKrásnohorské 321  Frýdek  73801  Frýdek-Místek; 496906522 183563672 OČM 534188000 120 1
+4a8d65e3-f3f6-418b-90c0-8ab6e11e4a8a ; Nemocnice České Budějovice  areál nemocnice  budova I  B Němcové 585/54  České Budějovice; CZ0311 1 ;B Němcové 585/54  370 01 České Budějovice; 489598586 144692803 OČM 26068877000 100 1
+e6274e68-5168-4069-b695-c12663c33260 ; Nemocnice Český Krumlov - Budova B; CZ0312 1 ;Nemocniční 429  381 01 Český Krumlov; 488124869 143260189 OČM 26095149000 40 1
+14a388ba-9117-4d64-873c-a19889459f7b ; Nemocnice Čáslav; CZ0205 1 ;Jeníkovská  348/17  Čáslav; 499042383 154007222 OČM 873764000 0 
+dbf8b1fa-f254-454f-b4fd-2dd2374e463e ; Nemocnice Šumperk; CZ0715 1 ;Nerudova 41  787 01 Šumperk; 499595753 169681881 OČM 47682795000 30 1
+a6b8bb9e-1c3f-4bde-ba68-f198b01e7e11 ; Oblastní nemocnice Jičín as; CZ0522 1 ;Bolzanova 512  50601 Jičín - Valdické Předměstí; 504401092 153574047 OČM 26001551000 20 1
+4677298c-95dc-4185-9808-c97e94d459a4 ; Oblastní nemocnice Kladno; CZ0203 1 ;Vančurova 1548; 501413414 140867231 OČM 27256537000 50 1
+ce977274-15f1-4584-9361-66799f81d2d2 ; Oblastní nemocnice Náchod as; CZ0523 1 ;Purkyňova 446  547 01 Náchod; 504102139 161670608 OČM 26000202000 80 1
+915be187-e54e-4d55-843c-dfd0c09dc870 ; Oblastní nemocnice Příbram; CZ020B 1 ;Podbrdská 269  261 95 Příbram V - Zdaboř; 496730922 139897189 OČM 27085031000 100 1
+32a67c08-f34a-488b-9db2-91e0bad1c8b0 ; Oblastní nemocnice Trutnov as; CZ0525 1 ;Maxima Gorkého 77  54101 Trutnov - Kryblice; 505594233 159204308 OČM 26000237000 0 1
+2c81eb6e-7da0-44b6-aa2d-2a9c74b306ba ; Orlickoústecká nemocnice; CZ0534 1 ;Čs armády 1076  562 18 Ústí nad Orlicí; 499695364 164041458 OČM 27520528000 80 1
+907e8bc1-bf44-4aa5-b643-26ca1a89249e ; Rokycanská nemocnice  a s; CZ0326 1 ;Voldušská 750  Nové Město  337 01 Rokycany; 497492700 136041400 OČM 26360900000 50 1
+098c1479-6e7a-493f-b7ab-7d0d021abfca ; Spol Podané ruce - Vakcinační centrum Bohéma; CZ0642 1 ;Rooseveltova 31  602 00 Brno-střed; 491982350 166110431 OČM 60557621020 0 
+596c2a97-3069-4595-b389-d74dc106d1bf ; Svitavská nemocnice; CZ0533 1 ;Kollárova 643/7  Svitavy  568 02; 497531230 164697410 OČM 27520552000 40 1
+8b93188e-bc67-4fae-90d6-c1c197fd1be7 ; Uherskohradišťská nemocnice as; CZ0722 1 ;J E Purkyně 365  68606 Uherské Hradiště; 490621286 174566992 OČM 27660915000 60 1
+b0f62bbe-c8e0-4620-9af6-edbcf89ac00f ; Všeobecná fakultní nemocnice Praha; CZ0100 1 ;U Nemocnice 499/2  128 08 Praha 2  Očkovací centrum ve Fakultní poliklinice  Karlovo náměstí 32  III patro; 500764067 144212458 OČM 64165000 250 
+bb6b9c11-c08e-4a4d-abe3-5e90e086bbcc ;Sokolov nemocnice; CZ0413 1 ;Slovenská 545  356 01 Sokolov;   OČM 24747246000 40 1
+a91d8128-c379-456c-b04b-1f1d6aa2da76 ;AGE Centrum Olomouc; CZ0712 1 ;Na Šibeníku 914/1  Olomouc  779 00; 495972900 172363800 OČM 29382564000 90 1
+c254b811-40e4-4604-8066-feac3dc58c41 ;ARC-MED sro Klášterec  Kyselka 104; CZ0422 1 ;Kyselka 104; 503784881 131704092 OČM 62245082002 120 1
+19a6168f-de5b-41d1-80f8-1ca39e836f72 ;BLUEDENT BRNO SLATINA - Očkovací centrum; CZ0642 1 ;Matlachova 234/24  Brno-Slatina  62700; 491772100 166901100 OČM 2356635000 800 
+c2ec6521-6a37-44c7-a661-1370adbac9c5 ;Bohumínská městská nemocnice  as; CZ0803 1 ;Slezská 207  Bohumín; 499174400 183352500 OČM 26834022000 120 1
+f1b3f2dc-c4d1-4f50-b79a-a48ed0c393d6 ;Bílovecká nemocnice  as; CZ0804 1 ;17 listopadu 538 743 01 Bílovec; 497622106 180175350 OČM 26865858000 160 1
+fafb9109-12b6-4278-87cd-310bd66a356a ;CLINICUM as - Kongresové centrum Praha; CZ0100 1 ;5 května 1640/65  140 21 Praha 4; 500625194 144296664 VOČM 25093126000 500 1
+12ca67cd-7038-438f-acf0-d193a141a653 ;Centrum zdravotní péče Jirny; CZ0209 1 ;Tovární 19  250 90 Jirny; 501156000 146992000 OČM 25606328000 50 1
+a1766688-7575-438d-8586-b0117a46153d ;Chrudimská nemocnice; CZ0531 1 ;Václavská 570  537 27 Chrudim; 499417778 158069425 OČM 27520561000 220 1
+df47a465-f872-4968-a8e9-057059b8e900 ;Comfort Care as - poliklinika Chodov  Praha 11; CZ0100 1 ;Kloknerova 1245/1; 500339900 144855000 OČM 25755021000 300 1
+14c58957-7396-4322-a237-67b5e31b16e3 ;Domažlická nemocnice; CZ0321 1 ;Kozinova 292  344 22 Domažlice; 494385100 129077800 OČM 26361078000 350 1
+1f87f33d-96b7-4e48-a6e9-8accc40e2129 ;Dopravní zdravotnictví as  Poliklinika AGEL Ostrava; CZ0806 1 ;Tyršova 34  Ostrava 72 806; 498370636 182869211 OČM 25903659004 200 1
+89cc2427-490c-49ef-9224-7adbaaab042c ;EDUMED - očkovací centrum Jaroměř; CZ0523 1 ;Dr Ed Beneše 191  551 01 Jaroměř; 503532878 159207408 OČM 27485820000 300 1
+a4c6a778-78c7-4604-9a76-2a929870a45c ;EUC Klinika Liberec; CZ0513 1 ;Klášterní 117/2; 507685300 150666600 OČM 28711319000 120 1
+f6a9ae5b-0d93-4bd4-b630-b3667a9c9059 ;EUC Klinika Plzeň - Denisovo nábřeží  Plzeň; CZ0323 1 ;Denisovo nábř 1000/4  301 00 Plzeň 3; 497445894 133828183 OČM 25202171000 500 1
+a0b3a397-29de-4207-bc36-402c3e2fb78e ;EUC Klinika Plzeň - Kralovice; CZ0325 1 ;Na Palcátech 368  331 41 Kralovice; 499833700 134829100 OČM 25202171000 400 
+4b39139d-22d5-40e3-b752-dfa2d6aca34e ;EUC klinika Ostrava as; CZ0806 1 ;Opavská 962/39  Ostrava; 498314431 181783136 OČM 25860836000 100 1
+d420fe26-7f32-4287-b929-4dc90d824b77 ;EUC klinika Plzeň - Záchranná služba Plzeňského kraje  Stříbro; CZ0327 1 ;Forstova 1595  349 01 Stříbro; 497587508 130063667 OČM 25202171000 160 
+b8908961-8b5d-46d6-ad40-89bceacd7874 ;EUC klinika Praha as - Šustova  Praha 11; CZ0100 1 ;Šustova 1930/2  148 00 Praha 11; 500277900 144896100 OČM 1918028000 400 1
+36399983-74e8-4864-9bb8-1fa47093b201 ;Endipra sro  Hlinsko; CZ0531 1 ;Nádražní 548  Hlinsko; 497660028 159015319 OČM 2443198000 300 1
+0f396137-e1fe-4e67-8291-292e4066376d ;FN Brno Bohunice dospělí (od 16 let); CZ0642 1 ;Jihlavská 340/20  625 00 Brno - Bohunice; 491743812 165779806 VOČM 65269705000 800 1
+262721a0-5551-41d6-bc46-06d5aa9d18a8 ;FN Ostrava - Poliklinika; CZ0806 1 ;17 listopadu 1790/5  Ostrava - Poruba  708 52; 498279700 181609358 DOČM 843989000 700 1
+8399fb2d-a203-4194-8b3a-a0d630e13532 ;FVZ UO - Katedra epidemiologie; CZ0521 1 ;Třebešská 1575  Hradec Králové;   AČR 0 100 
+689422fd-24a4-4095-8c0c-6b0a64808de7 ;FYZIOklinika  Praha 11 Chodov  Machkova 1642/2; CZ0100 1 ;Machkova 1642/2  Praha 11  Chodov; 500326878 145132733 OČM 24222101000 250 
+6ad1717f-2bac-44e6-b7e9-6582da6b6598 ;Fakultní Nemocnice Bulovka; CZ0100 1 ;Budínova 67/2  18000 Praha 8 - Libeň; 501147258 144597725 DOČM 64211000 416 1
+648f87b6-06e7-49d5-b2a7-2dc31c867ff7 ;Fakultní Thomayerova nemocnice B1; CZ0100 1 ;Vídeňská 800  Praha 4; 500300828 144597917 DOČM 64190000 800 1
+57932100-0df4-472c-a015-d2b750df5b58 ;Fakultní nemocnice Hradec Králové; CZ0521 1 ;Sokolská 581  50003 Hradec Králové - Nový Hradec Králové; 501983958 158272881 DOČM 179906000 780 1
+c2ca4cb4-2c8d-4463-9b85-88dff5eb4ba5 ;Fakultní nemocnice Královské Vinohrady; CZ0100 1 ;Šrobárova 50  10000 Praha 10 - Vinohrady; 500739067 144803081 DOČM 64173000 2000 1
+a1f7b243-f18c-45a2-8d82-5a3273c687b8 ;Fakultní nemocnice Olomouc; CZ0712 1 ;I P Pavlova 185/6  77900 Olomouc - Nová Ulice; 495821869 172376208 DOČM 98892000 500 1
+41c51947-5951-432c-9099-bf317756b09d ;Fakultní nemocnice Plzeň - očkovací místo; CZ0323 1 ;Edvarda Beneše 13  300 00 Plzeň; 497353128 133739317 OČM 669806000 600 1
+4a444781-6d8f-496e-9da0-5f813f6113a6 ;Fakultní nemocnice u sv Anny Brno; CZ0642 1 ;Pekařská 53  602 00 Brno; 491912400 165990900 DOČM 159816000 500 1
+77079458-38f2-4bff-b983-7f99a07afdc3 ;Fakultní nemocnice v Motole; CZ0100 1 ;V Úvalu 84/1  15000 Praha 5 - Motol; 500740167 143409881 DOČM 64203000 300 1
+32a90e9e-f2d5-4101-a1b4-dfb76000c628 ;Františkovy Lázně AQUAFORUM as; CZ0411 1 ;5května 469/19  Františkovy Lázně; 501171450 123577664 OČM 3257533000 30 1
+fc43817f-7eb9-49db-a93d-c37b9808cd43 ;GHC GENETICS  sro - Praha 8 Libeň; CZ0100 1 ;V Holešovičkách 29; 501176147 144589072 OČM 28188535000 50 1
+dc3d793a-374f-4a93-9c66-20fe7858020b ;GYN-F sro - Hradec Králové; CZ0521 1 ;Malé náměstí 7/23  500 03 Hradec Králové; 502101136 158365950 OČM 27546454000 50 
+d149c33b-4906-410d-948d-25128f4aa4d7 ;Hornická nemocnice s poliklinikou spol sro - Bílina; CZ0426 1 ;Pražská 206/95  418 01 Bílina; 505411144 137843264 OČM 61325422000 500 1
+f923b437-fab1-4e93-b5b5-b8d1ca541272 ;IMMUNO-FLOW sro; CZ0100 1 ;Rychnovská 651  Praha 9 Letnany; 501363439 145103592 OČM 62415522000 250 1
+c7235662-e72e-4610-9f94-280dad82b444 ;INEP medical sro; CZ0100 1 ;Křižíkova 264/22  186 00 Praha 8; 500913892 144465856 OČM 2071185000 100 1
+17f9de03-18a0-48e8-91dd-c9b925b2f66a ;IVF Czech Republic sro - Sanatorium Tomášov; CZ0724 1 ;U Lomu 638  760 01 Zlín; 492167472 176636294 OČM 25594575001 100 1
+30b0373e-0b9a-444d-aa0d-42c8066a39a7 ;ImunoGen sro; CZ0100 1 ;Sluneční náměstí 15  Praha 13; 500503111 143434461 OČM 6686630000 250 1
+f48613c8-f616-460b-bbb3-096e07223c73 ;ImunoSantana spol s ro; CZ0411 1 ;Májová 582/19  350 02 Cheb; 500756700 123698400 OČM 25687794000 160 1
+800e3522-2335-4e5c-bb6e-c219b5667f30 ;KV ARÉNA OČKOVACÍ CENTRUM; CZ0412 1 ;Západní 1812/73  Karlovy Vary; 502246786 128437961 VOČM 26365804000 1500 1
+ae9c4f09-2a1d-41dd-bf45-f8864f24dd5c ;Karvinská hornická nemocnice as Oddělení pracovního lékařství KHN; CZ0803 1 ;Zakladatelská 975/22  Karviná - Nové Město 735 06; 498701931 185406322 OČM 60793490000 60 1
+cd252dde-b78e-4c74-88e5-e95d894968ab ;Klatovská nemocnice; CZ0322 1 ;Klatovská nemocnice  Plzeňská 929  Klatovy; 494041700 132921900 OČM 26360527000 480 1
+7c7aa47c-bd44-46b8-b428-a132a7bc2f07 ;Krajská nemocnice T Bati  a s - 20 pavilon; CZ0724 1 ;Havlíčkovo nábřeží 600  Zlín  762 75; 492284611 176976953 VOČM 27661989000 200 1
+ec7464b3-cfbd-4e49-8187-5f438f69c731 ;Kroměřížská nemocnice as; CZ0721 1 ;Havlíčkova 660/69 - budova D   Kroměříž; 491731038 172247771 OČM 27660532000 200 1
+a70af252-fbab-41e1-a422-5ff5770c1ce9 ;Levitovo centrum následné péče; CZ0522 1 ;Riegrova 655  Hořice  508 01; 503684781 156398039 OČM 190217000 50 1
+6edad920-0382-4946-af44-cafeb841d6b1 ;Litomyšlská nemocnice; CZ0533 1 ;Jana Evangelisty Purkyně 652  570 01 Litomyšl; 498634561 163132058 OČM 27520579000 150 1
+b61479a7-8702-4529-b0a0-d6f31e635199 ;Luhačovice - Zdravotní středisko; CZ0724 1 ;Masarykova 315  763 26 Luhačovice; 491000700 177576000 OČM 25594575001 200 1
+ca4e137c-319d-45b5-a1f4-1a5ed0b02a9c ;Lázně Darkov  as; CZ0803 1 ;Čsl armády 2954/2  733 12 Karviná - Hranice; 498669981 185612275 OČM 61974935000 400 
+b163e60d-3d8f-48d8-afc7-fe9edb6502ba ;Lázně Praha as / Aquapalace Praha; CZ0209 1 ;Pražská 138  Čestlice  251 01; 500073453 145711231 OČM 28225571000 300 1
+28c67663-3032-41e4-9df6-7f90abea82f6 ;Léčebné lázně Mariánské Lázně as; CZ0411 1 ;Hlavní tř 655  353 01 Mariánské Lázně; 499689778 127019442 OČM 45359113000 134 
+85032af2-2893-4ba7-afbc-fe5cdee9a5cb ;MEDICAL PLUS  sro; CZ0722 1 ;Obchodní 1507  686 01 UhHradiště; 490695311 174634072 OČM 27700453000 300 1
+61655af2-1ed8-4603-91b2-bb7a9433ccc2 ;MUDr Radoslav Svoboda sro - Seč; CZ0531 1 ;Chrudimská 94  53807 Seč; 498473000 156590600 OČM 28782089000 50 
+4938a85d-84a8-4b1e-bc65-87a6dac5efa5 ;Masarykova městská nemocnice as (Jilemnice); CZ0514 1 ;Metyšova 372  51401 Jilemnice;   OČM 5421888000 60 1
+28d59069-2d52-40f5-a2a3-75b0daba1c2f ;Masarykova nemocnice Rakovník sro; CZ020C 1 ;Dukelských hrdinů 200  Rakovník; 501073508 137175817 OČM 26397943000 400 
+4475c51f-69b3-410d-b404-eaf319711512 ;Masarykova nemocnice v Ústí nad Labem (KZ as) - nemocnice; CZ0427 1 ;Sociální péče 3316/12a  400 11 Ústí nad Labem; 506805747 140167114 OČM 25488627010 1000 1
+fb6b58b9-4956-4a01-8c5f-b9b106dc784e ;Medica JM - Poliklinika Michnova; CZ0100 1 ;Michnova 1622/4  149 00 Praha 4; 500313361 145206247 OČM 3486788001 120 
+2d133449-b6ac-4b5e-b2e9-428b893345ac ;Medicínské centrum Praha sro; CZ0100 1 ;Mezi vodami 205/29; 500125500 144012600 OČM 25032119000 50 1
+9cf6f860-3089-4f8b-abf9-86109580dd7e ;Moje Ambulance Karlovy Vary; CZ0412 1 ;Chebská 355/49  360 06 Karlovy Vary - Dvory; 502284878 128337825 OČM 27798941004 100 
+f1434a8c-a1f4-4af4-b4eb-ea7a70011535 ;Moje Ambulance as Frýdek - Místek; CZ0802 1 ;Viléma Závady 3679 738 01 Frýdek-Místek; 496807300 183570300 OČM 27798941023 66 1
+3ffb874d-db62-4e50-8c75-d819d283d160 ;Moje Ambulance as Havířov; CZ0803 1 ;Karvinská 1518/5  73601 Havířov - Město; 497880936 184360161 OČM 27798941008 66 1
+3aff95e6-8ae8-445c-9cdf-dfdb187f7f2e ;Moje Ambulance as Karviná; CZ0803 1 ;Tř Těreškovové 2233/28  Karviná - Mizerov  734 01; 498572808 185575942 OČM 27798941025 42 1
+0c53a5a0-70c8-489f-8fc5-3d98a41bcb3e ;Moje Ambulance as Opava; CZ0805 1 ;Pekařská 1692/83  Opava-Katerřinky 747 05; 499480592 179052294 OČM 27798941007 42 1
+bd060d74-64dd-45dd-bd06-51f9d6147814 ;Moje Ambulance as Ostrava - Poruba; CZ0806 1 ;Francouzská 6167  Ostrava - Poruba 708 00; 498275600 181865500 OČM 27798941002 66 
+35bc3f1c-b301-44cd-8b69-7073ea58d968 ;Moje Ambulance as Ostrava-Centrum; CZ0806 1 ;Vítkovická 3077/16  Moravská Ostrava; 498297081 182767560 OČM 27798941001 42 1
+39aece24-3e8d-4261-8cab-db23b2d48d50 ;Mělnická zdravotní  as; CZ0206 1 ;Pražská 528  276 01 Mělník; 503482825 144849831 OČM 27958639000 200 1
+0707be37-c28c-489c-b0d2-96704013eb91 ;Městská nemocnice Městec Králové as; CZ0208 1 ;Prezidenta Beneše 343  28903 Městec Králové; 502053000 152887200 OČM 26495015000 200 1
+a74425f4-80fe-4f1f-abb9-3e8df7ca8aac ;Městská nemocnice Ostrava  po  Vakcinační centrum; CZ0806 1 ;Varenská 3131/5 728 80 Ostrava-Moravská Ostrava; 498346981 182738986 OČM 635162000 400 1
+12d05c60-f168-462a-a4e1-ac5ad8e42722 ;Městská poliklinika Praha - Spálená; CZ0100 1 ;Spálená 78/12; 500802842 144199494 OČM 128601000 70 1
+a5302c1a-44fb-40d2-99bd-597fdc718a41 ;Můj zubař sro - Hradec Králové; CZ0521 1 ;Topolová 340/1  Hradec Králové  50003; 502189856 158578097 OČM 28829239000 400 
+004e0965-84f6-4aa1-92cb-7242c8ae394a ;Nemocnice AGEL Jeseník as; CZ0711 1 ;Lipovská 103/39  790 01 Jeseník; 502287914 171988036 OČM 47973927000 180 
+249c3cf7-8d0e-4301-998b-140dddf8694d ;Nemocnice AGEL Nový Jičín as - Vakcinační centrum pro veřejnost; CZ0804 1 ;K Nemocnici 1886/57; 495870456 180065553 OČM 25886207000 400 
+71b299fb-33f6-46b7-ae94-78815297125c ;Nemocnice AGEL Ostrava-Vítkovice as; CZ0806 1 ;Zalužanského 15  Ostrava; 498149922 182710944 OČM 60793201000 200 1
+243d9780-7f89-4218-8db5-e18ceda4778b ;Nemocnice AGEL Podhorská as pracoviště Bruntál; CZ0801 1 ;Nádražní 1589/29  79201 Bruntál; 499946861 174712525 OČM 47668989000 204 1
+859c633a-596c-44ce-82df-0ba44ba163ca ;Nemocnice Agel Říčany as; CZ0209 1 ;Smiřických 315/26  251 01 Říčany; 499959700 146748500 OČM 27365867000 150 1
+2606719f-ddd9-4b63-8a67-68236380820f ;Nemocnice Blansko; CZ0641 1 ;Sadová 1596/33  Blansko  678 31; 493616136 166535689 OČM 386634000 200 1
+7bdb206f-d1a2-4afb-9770-863958ae98f7 ;Nemocnice Boskovice sro; CZ0641 1 ;Otakara Kubína 179  680 01 Boskovice; 494909900 166430600 OČM 26925974000 1200 1
+da5422b1-8002-456c-aa95-9a26a5e0e622 ;Nemocnice Břeclav; CZ0644 1 ;U Nemocnice 3066/1 Břeclav; 487529547 168807483 VOČM 390780000 250 1
+c1308736-72a2-4f4b-b215-a68603bc5fb6 ;Nemocnice Chomutov (KZ as); CZ0422 1 ;Kochova 1185  430 12  Chomutov; 504556889 134099056 VOČM 25488627050 200 1
+77a1d5c5-26b3-4c61-9814-fa6497f83bdd ;Nemocnice Děčín (KZ as) - budova E  I patro  vlevo; CZ0421 1 ;Pohraniční 1288/1  Děčín I - Děčín; 507790253 142155997 OČM 25488627020 100 1
+5af3b96f-7153-4eec-a66a-20a2fcdb9aa8 ;Nemocnice Havlíčkův Brod; CZ0631 1 ;Husova 2624  580 22 Havlíčkův Brod; 496094800 155712758 OČM 179540000 500 1
+d98e57cf-fc29-40fb-a432-7631f17956ea ;Nemocnice Havířov  po OČKO; CZ0803 1 ;Dělnická 1132/24  736 01 Havířov; 497833794 184363747 OČM 844896000 650 1
+09eed895-008f-4a50-839d-8ba8dbfe2850 ;Nemocnice Hranice as; CZ0714 1 ;Zborovská 1245  75301 Hranice I-Město; 495552825 177448519 OČM 47677406000 240 
+4ed8c2be-fe2b-41d2-b58e-d69ed9a4c9f7 ;Nemocnice Jablonec n Nisou; CZ0512 1 ;Očkovací centrum Nemocnice Jablonec nad Nisou  Nemocniční 15  Jablonec nad Nisou; 507294142 151597242 OČM 829838000 300 1
+65653e1e-fb9e-4f78-9e95-eb7c46d328d5 ;Nemocnice Jihlava; CZ0632 1 ;Vrchlického 59  58601 Jihlava; 493972100 155699300 DOČM 90638000 120 1
+f2cc8426-9fc1-43b9-b350-3931ae756ddc ;Nemocnice Jihlava - samoplátci; CZ0632 1 ;Vrchlického 59  58601 Jihlava; 493972100 155699300 SMPL 90638000 30 
+a10748fc-5d14-4c33-97f9-48ecd7a37ee6 ;Nemocnice Jihlava - skupina 5-15; CZ0632 1 ;Vrchlického 59  58601 Jihlava; 493972100 155699300 OČM 90638000 60 
+c4411674-d3bd-4666-96df-fdedefed8b68 ;Nemocnice Jindřichův Hradec - OČKO centrum; CZ0313 1 ;U Nemocnice 380/III  Jindřichův Hradec 37701; 491396447 150048061 OČM 26095157000 300 1
+76a174fb-e672-40c5-ae9c-06c50eb4ce7a ;Nemocnice Kadaň sro; CZ0422 1 ;Golovinova 1559  Kadaň 432 01; 503912239 132701558 OČM 25479300000 200 1
