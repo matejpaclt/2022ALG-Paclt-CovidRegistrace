@@ -1,0 +1,6 @@
+ut,tu,tut,tutut,tututtuuu,1254,false
+name,pass,firstname,surname,loll,4,false
+name,pass,name,surname,email,1234,false
+a,a,a,a,a,1,true
+matpac,pass,Matej,Paclt,matej.paclt@tul.cz,11140151,false
+jiresdom,kuk,Dominik,Jires,jiresdom@gmail.com,154752331,false

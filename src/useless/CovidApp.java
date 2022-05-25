@@ -3,22 +3,22 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Main;
-
-import java.io.IOException;
-
-
+package useless;
 
 /**
  *
  * @author Uživatel
  */
-public class Main {
+public class CovidApp {
 
     /**
      * @param args the command line arguments
      */
-    public static void main(String[] args) throws IOException   {
-        ui.UI.menu();
-}
+    
+    
+    
+    public static void main(String[] args) {
+        // TODO code application logic here
+    }
+    
 }

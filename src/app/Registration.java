@@ -5,65 +5,62 @@ package app;
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
+import java.io.BufferedReader;
 import java.util.Scanner;
 import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.io.FileReader;
 import java.io.IOException;
 import java.io.FileWriter;
+import java.util.ArrayList;
+import java.util.Arrays;
  
 public class Registration {
      
-    public void register() throws FileNotFoundException
+    public String register() throws FileNotFoundException
     {
         Scanner sc=new Scanner(System.in);
-         
+         String login="";
         System.out.println("Enter User Name: ");
-        String Uname=sc.nextLine();
-        System.out.println(Uname);
+        String uname=sc.nextLine();
          
         System.out.println("Enter Password: ");
-        String Pass=sc.nextLine();
-        System.out.println(Pass);
+        String pass=sc.nextLine();
          
         System.out.println("Confirm Password: ");
-        String ConPass=sc.nextLine();
-        System.out.println(ConPass);
+        String conPass=sc.nextLine();
         
         System.out.println("Zadejte jméno: ");
-        String Name=sc.nextLine();
-        System.out.println(Name);
+        String name=sc.nextLine();
         
         System.out.println("Zadejte příjmení: ");
-        String SurName=sc.nextLine();
-        System.out.println(SurName);
+        String surName=sc.nextLine();
         
         System.out.println("Zadejte email: ");
-        String Email=sc.nextLine();
-        System.out.println(Email);
+        String email=sc.nextLine();
         System.out.println("Zadejte rodné číslo: ");
         int pid=sc.nextInt();
-        System.out.println(pid);
         sc.nextLine();
         System.out.println("Byli jste již očkováni?(a/n) ");
         boolean vac=Character.toLowerCase(sc.nextLine().charAt(0)) != 'n';
         System.out.println((vac)?("ano"):("ne"));
         
-        Name=Name.trim();
-        SurName=SurName.trim();
-        Email=Email.trim();
-        Uname=Uname.trim();
-        Pass=Pass.trim();
-        ConPass=ConPass.trim();
+        name=name.trim();
+        surName=surName.trim();
+        email=email.trim();
+        uname=uname.trim();
+        pass=pass.trim();
+        conPass=conPass.trim();
          
          
          
  
-        String x= Uname+" "+Pass;
-        if(Pass.equals(ConPass))
+        String x= uname+" "+pass;
+        if(pass.equals(conPass))
         {
              
-              File f = new File("Registration.txt");
+              File f = new File("data/Registration.txt");
               Scanner content = new Scanner(f);
                
                
@@ -85,7 +82,7 @@ public class Registration {
                     }
                     else if(choice==2)
                     {
-                        this.login();
+                        login=this.login();
                     }
                     else
                     {
@@ -98,8 +95,8 @@ public class Registration {
                 if(flag==0)
                 {
                     try {
-                        BufferedWriter out = new BufferedWriter(new FileWriter("Registration.txt", true)); 
-                        out.write(Uname+","+Pass+","+Name+","+SurName+","+Email+","+pid+","+String.valueOf(vac)+"\n");
+                        BufferedWriter out = new BufferedWriter(new FileWriter("data/Registration.txt", true)); 
+                        out.write(uname+","+pass+","+name+","+surName+","+email+","+pid+","+String.valueOf(vac)+"\n");
                         out.close();
                     }
                     catch (IOException e) {
@@ -108,7 +105,7 @@ public class Registration {
                      
                     System.out.println("Successfully Registered");
                     System.out.println("Please login");
-                    this.login();
+                    login=this.login();
                 }
              
              
@@ -127,36 +124,33 @@ public class Registration {
             }
             else if(choice==2)
             {
-                this.login();
+                login=this.login();
             }
             else
             {
                 System.out.println("Choose Proper Option");
             }
         }
-        
+       return login; 
     }
      
-    public void login()
+    public String login()
     {
          
         Scanner sc=new Scanner(System.in);
          
         System.out.println("Enter User Name: ");
-        String Uname=sc.nextLine();
-        System.out.println(Uname);
-         
+        String uname=sc.nextLine();
         System.out.println("Enter Password: ");
-        String Pass=sc.nextLine();
-        System.out.println(Pass);
-        Uname=Uname.trim();
-        Pass=Pass.trim();
-        String x= Uname.concat(Pass);
+        String pass=sc.nextLine();
+        uname=uname.trim();
+        pass=pass.trim();
+        String x= uname.concat(pass);
          
          
         try {
              
-              File f = new File("Registration.txt");
+              File f = new File("data/Registration.txt");
               Scanner content = new Scanner(f);
               int flag=0;
               while (content.hasNextLine()) {
@@ -202,9 +196,22 @@ public class Registration {
               e.printStackTrace();
             }
          
-        
+        return uname;
     }
-     
+     public static ArrayList<String> getLoginInfo(String uname) throws FileNotFoundException, IOException{
+         BufferedReader br = new BufferedReader(new FileReader("data/Registration.txt"));
+            String line;
+            ArrayList<String> arr = new ArrayList<>();
+         while ((line = br.readLine()) != null) {
+                String[] data = line.split(","); 
+                if(data[0].equals(uname)){
+                    arr.addAll(Arrays.asList(data));
+                    return arr;
+                }
+                
+        }
+         return arr;
+     }
         
     public static void main(String[] args) throws FileNotFoundException{
      
