@@ -57,10 +57,6 @@ public class Registration implements RegistrationInterface{
         System.out.println("Zadejte rodné číslo: ");
         int pid = sc.nextInt();
         sc.nextLine();
-        System.out.println("Byli jste již očkováni?(a/n) ");
-        boolean vac = Character.toLowerCase(sc.nextLine().charAt(0)) != 'n';
-        System.out.println((vac) ? ("ano") : ("ne"));
-
         name = name.trim();
         surName = surName.trim();
         gender = gender.trim().toUpperCase();
@@ -98,7 +94,7 @@ public class Registration implements RegistrationInterface{
             if (flag == 0) {
                 try {
                     BufferedWriter out = new BufferedWriter(new FileWriter("data/Registration.txt", true));
-                    out.write(uname + "," + pass + "," + name + "," + surName + "," + gender + "," + email + "," + pid + "," + String.valueOf(vac) + "\n");
+                    out.write(uname + "," + pass + "," + name + "," + surName + "," + gender + "," + email + "," + pid + "," + "\n");
                     out.close();
                 } catch (IOException e) {
                     System.out.println("Vyskytla se vyjímka." + e);

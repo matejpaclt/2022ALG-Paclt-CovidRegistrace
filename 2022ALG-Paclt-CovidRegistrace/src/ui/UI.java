@@ -146,20 +146,19 @@ public class UI {
             do{
             if(again){sc.nextLine();}
             number = sc.nextInt() - 1;
-            if (number<0 || number > 142){
+            if (number<0 || number > 140){
                 System.out.println("Vyberte platné číslo.");
             }
-            }while(number<0 || number > 142);
-            System.out.println("Zadejte datum kdy se chcete nechat očkovat.(den mesic)");
+            }while(number<0 || number > 135);
+            System.out.println("Zadejte za kolik dní se chcete nechat očkovat");
+            System.out.println("Zapsat termín lze pouze na 31 dní dopředu.");
             int day;
-            int month;
             do{
             day = sc.nextInt();
-            month = sc.nextInt();
-            if (month<1 || month>12 || day<0 || day>31){
-                System.out.println("Vyberte platný datum.");
+            if (day<0 || day > 31){
+                System.out.println("Vyberte platné číslo.");
             }
-            }while(month<1 || month>12 || day<0 || day>31);
+            }while(day<0 || day > 31);
             System.out.println("Kterou hodinu? (Otevírací hodiny 6-18h)");
             int hour;
             do{
@@ -169,15 +168,16 @@ public class UI {
             }
             }while(hour<6 || hour>=18);
             String name = Registration.getLoginInfo(login).get(3);
-            Appointment apo = new Appointment(name, places.get(number).getName(),places.get(number).getAdress() , day, hour, false, Registration.getLoginInfo(login).get(4));
+            Appointment apo = new Appointment(name, places.get(number).getName(),places.get(number).getAdress(), day, hour, false, Registration.getLoginInfo(login).get(4));
             apo.createInvite();
             again = false;
-            } catch (DocumentException | IOException e) {
+            }
+            catch (DocumentException | IOException e) {
             System.out.println("Špatně zadáno. ");
             again = true;
         }
             }while(again);
-        
+
     }
 /**
  * User fills up info for Covid-testing visit.
@@ -219,10 +219,6 @@ public class UI {
                 System.out.println("Vyberte platnou hodinu");
             }
             }while(hour<6 || hour>=18);
-            String numplace = String.valueOf(number);
-                System.out.println(numplace);
-                System.out.println(hour);
-                System.out.println(day);
             String name = Registration.getLoginInfo(login).get(3);
             Appointment apo = new Appointment(name, places.get(number).getName(),places.get(number).getAdress(), day, hour, true, Registration.getLoginInfo(login).get(4));
             apo.createInvite();
@@ -249,7 +245,6 @@ public class UI {
         System.out.println("Pohlaví: " + Registration.getLoginInfo(login).get(4));
         System.out.println("Email: " + Registration.getLoginInfo(login).get(5));
         System.out.println("Rodné číslo: " + Registration.getLoginInfo(login).get(6));
-        System.out.println("Očkován: " + Registration.getLoginInfo(login).get(7));
 
     }
 

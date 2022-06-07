@@ -22,18 +22,16 @@ public class Place implements Comparable<Place>{
     String number;
     String name;
     String adress;
-    String full;
     /**
      * Place constructor
      * @param number
      * @param name 
      * @param adress 
      */
-    public Place(String number, String name, String adress, String full) {
+    public Place(String number, String name, String adress) {
          this.number=number;
          this.name=name;
          this.adress=adress;
-         this.full=full;
     }
 /**
  * Number getter
@@ -43,9 +41,6 @@ public class Place implements Comparable<Place>{
         return number;
     }
 
-    public String getFull() {
-        return full;
-    }
 
 
 /**
@@ -108,8 +103,7 @@ public class Place implements Comparable<Place>{
         String number = metadata[0];
         String place = metadata[1];
         String adress = metadata[2];
-        String full = metadata[3];
-        return new Place(number, place,adress,full);
+        return new Place(number, place,adress);
     }
         
 public static void main(String... args) {
