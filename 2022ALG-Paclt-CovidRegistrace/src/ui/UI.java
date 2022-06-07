@@ -8,20 +8,20 @@ package ui;
 import app.Appointment;
 import app.Registration;
 import com.itextpdf.text.DocumentException;
-import utils.Place;
-import static utils.Place.readPlacesFromCSV;
+import app.Place;
+import static app.Place.readPlacesFromCSV;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.text.ParseException;
 import java.util.Collections;
 import java.util.List;
 import java.util.Scanner;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import utils.FileTools;
 
 /**
- * User interface class, user interacts with program here
+ * User interface class, user interacts with program
  * @author Uživatel
  */
 public class UI {
@@ -31,7 +31,7 @@ public class UI {
  * Menu, user can login, register and then choose one of the apps functions.
  * @throws IOException 
  */
-    public static void menu() throws IOException {
+    public static void menu() throws IOException, ParseException {
         String login = "";
         try {
 
@@ -169,9 +169,8 @@ public class UI {
             }
             }while(hour<6 || hour>=18);
             String name = Registration.getLoginInfo(login).get(3);
-            Appointment apo = new Appointment(name, places.get(number).getName(),places.get(number).getAdress() , day, month, hour, false, Registration.getLoginInfo(login).get(4));
+            Appointment apo = new Appointment(name, places.get(number).getName(),places.get(number).getAdress() , day, hour, false, Registration.getLoginInfo(login).get(4));
             apo.createInvite();
-            
             again = false;
             } catch (DocumentException | IOException e) {
             System.out.println("Špatně zadáno. ");
@@ -199,20 +198,19 @@ public class UI {
             do{
             if(again){sc.nextLine();}
             number = sc.nextInt() - 1;
-            if (number<0 || number > 220){
+            if (number<0 || number > 135){
                 System.out.println("Vyberte platné číslo.");
             }
-            }while(number<0 || number > 220);
-            System.out.println("Zadejte datum kdy se chcete nechat testovat.(den mesic)");
+            }while(number<0 || number > 135);
+            System.out.println("Zadejte za kolik dní se chcete nechat testovat");
+            System.out.println("Zapsat termín lze pouze na 31 dní dopředu.");
             int day;
-            int month;
             do{
             day = sc.nextInt();
-            month = sc.nextInt();
-            if (month<1 || month>12 || day<0 || day>31){
-                System.out.println("Vyberte platný datum.");
+            if (day<0 || day > 31){
+                System.out.println("Vyberte platné číslo.");
             }
-            }while(month<1 || month>12 || day<0 || day>31);
+            }while(day<0 || day > 31);
             System.out.println("Kterou hodinu? (Otevírací hodiny 6-18h)");
             int hour;
             do{
@@ -221,12 +219,16 @@ public class UI {
                 System.out.println("Vyberte platnou hodinu");
             }
             }while(hour<6 || hour>=18);
+            String numplace = String.valueOf(number);
+                System.out.println(numplace);
+                System.out.println(hour);
+                System.out.println(day);
             String name = Registration.getLoginInfo(login).get(3);
-            Appointment apo = new Appointment(name, places.get(number).getName(),places.get(number).getAdress(), day, month, hour, true, Registration.getLoginInfo(login).get(4));
+            Appointment apo = new Appointment(name, places.get(number).getName(),places.get(number).getAdress(), day, hour, true, Registration.getLoginInfo(login).get(4));
             apo.createInvite();
-            
             again = false;
-            } catch (DocumentException | IOException e) {
+            }
+            catch (DocumentException | IOException e) {
             System.out.println("Špatně zadáno. ");
             again = true;
         }

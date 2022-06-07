@@ -14,9 +14,9 @@ import com.itextpdf.text.pdf.PdfWriter;
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
-import utils.FileTools;
 import java.time.*;
 import java.time.format.DateTimeFormatter;
+import utils.FileTools;
 
 /**
  * Class that stores and creates appointments
@@ -34,12 +34,15 @@ interface AppointmentInterface{
 enum Gender{
     M,F;
 }
+/**
+ * Class that creates apointment from data
+ * @author Uživatel
+ */
 public class Appointment implements AppointmentInterface{
     String person;
     String place;
     String adress;
     int day;
-    int month;
     int hour;
     boolean isTest;
     String gender;
@@ -49,17 +52,15 @@ public class Appointment implements AppointmentInterface{
  * @param place
      * @param adress
  * @param day
- * @param month
  * @param hour
  * @param isTest
  * @param gender 
  */
-    public Appointment(String person, String place, String adress, int day, int month, int hour, boolean isTest, String gender) {
+    public Appointment(String person, String place, String adress, int day, int hour, boolean isTest, String gender) {
         this.person = person;
         this.place = place;
         this.adress = adress;
         this.day = day;
-        this.month = month;
         this.hour = hour;
         this.isTest = isTest;
         this.gender = gender;
@@ -83,10 +84,11 @@ public class Appointment implements AppointmentInterface{
         } else {
             g = "Vážený Pane ";
         }
-        LocalDate lde = LocalDate.of(2022,getMonth(), getDay());
+        
         DateTimeFormatter dtf = DateTimeFormatter.ofPattern("d.M");
         int plusone = getHour() + 1;
-        LocalDate ld = LocalDate.now();
+        LocalDate today = LocalDate.now();
+        LocalDate apoday = today.plusDays(getDay());
         DateTimeFormatter dtfl = DateTimeFormatter.ofPattern("d.M.yyyy");
         StringBuilder sb1 = new StringBuilder();
         StringBuilder sb2 = new StringBuilder();
@@ -101,7 +103,7 @@ public class Appointment implements AppointmentInterface{
         sb3.append("Na ");
         sb3.append(testocko);
         sb3.append(" se dostavte ");
-        sb3.append(lde.format(dtf));
+        sb3.append(apoday.format(dtf));
         sb3.append(". mezi ");
         sb3.append(getHour());
         sb3.append(":00 a ");
@@ -115,16 +117,13 @@ public class Appointment implements AppointmentInterface{
         sb3.append(".");
         sb4.append(" Těšíme se na vás.\n Ministerstvo zdravotnictví.");
         sb4.append(" Dne ");
-        sb4.append(ld.format(dtfl));
+        sb4.append(today.format(dtfl));
         String fullText= sb1.toString() + "\n" + sb2.toString() + "\n" + sb3.toString() + "\n" + sb4.toString();
         FileTools.writeToFile(ftxt, fullText);
         System.out.println(fullText);
         Document document = new Document();
         PdfWriter.getInstance(document, new FileOutputStream(fpdf));
-        File fontFile = new File("data/times new roman.ttf");
         document.open();
-        BaseFont unicode = BaseFont.createFont(fontFile.getAbsolutePath(), BaseFont.IDENTITY_H, BaseFont.EMBEDDED);
-        Font fonti = new Font(unicode, 12);
         BaseFont helvetica = BaseFont.createFont(BaseFont.HELVETICA, BaseFont.CP1250, BaseFont.EMBEDDED);
         Font font = new Font(helvetica, 12);
         document.add(new Paragraph(sb1.toString(),font));
@@ -144,10 +143,6 @@ public class Appointment implements AppointmentInterface{
  * 
  * @param month 
  */
-    public void setMonth(int month) {
-        this.month = month;
-    }
-
     public String getAdress() {
         return adress;
     }
@@ -174,9 +169,6 @@ public class Appointment implements AppointmentInterface{
         return person;
     }
 
-    public int getMonth() {
-        return month;
-    }
 /**
  * 
  * @return 

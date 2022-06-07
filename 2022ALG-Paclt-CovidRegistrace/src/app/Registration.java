@@ -15,14 +15,15 @@ import java.io.IOException;
 import java.io.FileWriter;
 import java.util.ArrayList;
 import java.util.Arrays;
-/**
- * Class that handles user registration, login and access to login information
- * @author Uživatel
- */
+
 interface RegistrationInterface{
      String register() throws FileNotFoundException;
      String login();
 }
+/**
+ * Class that handles user registration, login and access to login information
+ * @author Uživatel
+ */
 public class Registration implements RegistrationInterface{
 /**
  * Method used to register the user, returns users login
@@ -69,7 +70,7 @@ public class Registration implements RegistrationInterface{
         conPass = conPass.trim();
 
         String x = uname + " " + pass;
-        if (pass.equals(conPass) || email.contains("@") || gender.equals("M") || gender.equals("F") ) {
+        if (pass.equals(conPass) || email.contains("@") || gender.equals("M") || gender.equals("F")) {
 
             File f = new File("data/Registration.txt");
             Scanner content = new Scanner(f);
