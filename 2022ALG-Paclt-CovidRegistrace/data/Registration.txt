@@ -1,0 +1,12 @@
+ut,tu,tut,tutut,F,tututtuuu,1254,false
+name,pass,firstname,surname,F,loll,4,false
+name,pass,name,surname,F,email,1234,false
+a,a,a,a,F,a,1,true
+matpac,pass,Matej,Paclt,M,matej.paclt@tul.cz,11140151,false
+jiresdom,kuk,Dominik,Jires,M,jiresdom@gmail.com,154752331,false
+Jindrich,StaryPan,Jindrich,M,StaryPan,nenene,1235456,true
+sefr,dominik,dominik,sefr,M,sefrdominik,13233456,true
+Petr,Omacka,Petr,Omacka,M,petr.omacka@gmail.com,1234,false
+Kuba,Brambor,Kuba,Klimo,M,klimojakub97@gmail.com,151654,true
+filkra,passwd,Filip,Kr�l,M,filip.kral@post.cz,111112,true
+testr,asdf,tester,two,F,example@email.cz,1111111111,true
