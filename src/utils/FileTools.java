@@ -5,160 +5,112 @@
  */
 package utils;
 
-import useless.Place;
-import app.Table;
+import app.Place;
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.File;
-import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
-import java.text.SimpleDateFormat;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Calendar;
-import java.util.Date;
-import java.util.GregorianCalendar;
-import java.util.List;
 import java.util.Scanner;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 
 /**
+ * Class that handles scanning and writing to file
  *
  * @author Uživatel
  */
 public class FileTools {
-    public static void writeToFile(File file, String string) throws IOException{
+
+    /**
+     * Method that writes string to a file
+     *
+     * @param file
+     * @param string
+     * @throws IOException
+     */
+    public static void writeToFile(File file, String string) throws IOException {
         FileWriter writer = new FileWriter(file);
         writer.write(string);
         writer.close();
     }
-    public static String scanFile(File file, String string) throws IOException{
+
+    /**
+     * Method that scans file line after line
+     *
+     * @param file
+     * @param string
+     * @return
+     * @throws IOException
+     */
+    public static String scanFile(File file, String string) throws IOException {
         Scanner scan = new Scanner(file);
-        String fileContent="";
-        while(scan.hasNextLine()){
-        fileContent=fileContent.concat(scan.nextLine() + "\n");
+        String fileContent = "";
+        while (scan.hasNextLine()) {
+            fileContent = fileContent.concat(scan.nextLine() + "\n");
         }
         return fileContent;
     }
-    public static void createPlaceFiles(File file, File dir){
-        try {
-            BufferedReader br = new BufferedReader(new FileReader(file));
-            String line;
-            while ((line = br.readLine()) != null) {
-                String[] data = line.split(",");
-                File f = new File(dir+"/"+data[0]+".csv");
-                if(!f.exists()){
-                        f.createNewFile();
-                    }
-                System.out.println(data[0]);
-            }
-            File d=new File(dir+"/");
-            tablesToAllFiles(dir);
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-    }
-    public static void insertTable(File file,ArrayList<ArrayList<Integer>> table) throws IOException{
-            PrintWriter printWriter = new PrintWriter(new FileWriter(file));
-            for(int i=0;i<30;i++){
-                    for(int j=0;j<11;j++){
-                        printWriter.print(table.get(i).get(j) + ", ");
-                    }
-                    printWriter.println(table.get(i).get(11));
-                }
-                printWriter.close();
-    }
-    
-    public static void tablesToAllFiles(File dir) throws IOException{
-        File[] directoryListing = dir.listFiles();
-        if (directoryListing != null) {
-            for (File file : directoryListing) {
-                insertTable(file,Table.createTable());
-            }
-        }
-    }
-    public static void changeOneRow(String place,ArrayList<Integer> row,int day,int hour){
-        
-    }
-    private static Scanner x;
-    public static void main(String[] args){
-    }
-    public static void editFile(String filepath,String editTerm,String newID,String newName,String newAge){
-        String tempFile = "data/temp.txt";
+
+    /*public static boolean fillOneSpace(String filepath, String editTerm, int time, int date) {
+        String tempFile = "data/temp.csv";
         File oldFile = new File(filepath);
         File newFile = new File(tempFile);
-        String ID = ""; String name = "";String age="";
-      try{
-        FileWriter fw = new FileWriter(tempFile,true);
-       BufferedWriter bw =new BufferedWriter(fw);
-       PrintWriter pw = new PrintWriter(bw);
-       x= new Scanner(new File(filepath));
-       x.useDelimiter("[,\n]");
-       while(x.hasNext()){
-           ID = x.next();
-           name = x.next();
-           age = x.next();
-           if(ID.equals(editTerm)){
-               pw.println(newID+","+newName+","+newAge);
-           }else{
-            pw.println(ID+","+name+","+age);   
-           }
-       }
-       x.close();
-       pw.flush();
-       pw.close();
-       oldFile.delete();
-       File dump = new File(filepath);
-       newFile.renameTo(dump);
-      }catch(Exception e){
-          e.printStackTrace();
-      }
-    }
-    
-    /*
-    public static void placesFileRead(File file1,File file2){
+        boolean full = false;
+        time=((date)*12)+(time-6+3);
         try {
-            //File f = new File(file1);
-            if(!file1.exists()){
-                file1.createNewFile();
-            }  
-            BufferedReader br = new BufferedReader(new FileReader(file2));
-            FileWriter fileWriter = new FileWriter(file1);
-            PrintWriter printWriter = new PrintWriter(fileWriter);
-            String line;
-             while ((line = br.readLine()) != null) {
-                String[] data = line.split(";");
-                String place = data[1];
-                place=place.trim();
-                if(place.equals("misto")){  
-                }else{
-                    printWriter.print(place+","+data[data.length-2]+"\n");
+            FileWriter fw = new FileWriter(tempFile, true);
+            BufferedWriter bw = new BufferedWriter(fw);
+            PrintWriter pw = new PrintWriter(bw);
+            try (BufferedReader br = new BufferedReader(new FileReader(filepath))) {
+                String line = br.readLine();
+                while (line != null) {
+                    String[] attributes = line.split(",");
+                    line = br.readLine();
+                    String newfull = String.valueOf(Integer.parseInt(attributes[time]) - 1);
+                    if (attributes[0].equals(editTerm)) {
+                        if (Integer.parseInt(attributes[time]) - 1 < 0) {
+                            full = true;
+                            for (int i = 0; i < attributes.length; i++) {
+                                String attribute = attributes[i];
+                                pw.print(attribute + ",");
+                            }
+                            pw.println();
+                        } else {
+                            for (int i = 0; i < attributes.length; i++) {
+                                if(!(i==time)){
+                                String attribute = attributes[i];
+                                pw.print(attribute + ",");
+                                }else {
+                                    pw.print(newfull + ",");
+                                }
+                            }
+                            pw.println();
+                        }
+                    } else {
+                        for (int i = 0; i < attributes.length; i++) {
+                                String attribute = attributes[i];
+                                pw.print(attribute + ",");
+                            }
+                            pw.println();
+                    }
                 }
-             }
 
-             
-                BufferedWriter outg = new BufferedWriter(new FileWriter(g));
-                for(int i=1;i<31;i++){
-                    Calendar cal = new GregorianCalendar();
-                    SimpleDateFormat sdfD = new SimpleDateFormat("d/MM");
-                    cal.add(Calendar.DAY_OF_MONTH, i);
-                    String date = sdfD.format(cal.getTime());
-                    outg.write(date+"\n");
-                
-                }
-        
-              
-           printWriter.close(); 
-        } catch (FileNotFoundException e) {
+            } catch (IOException ioe) {
+                ioe.printStackTrace();
+            }
+            pw.flush();
+            pw.close();
+            oldFile.delete();
+            File dump = new File(filepath);
+            newFile.renameTo(dump);
+        } catch (IOException | NumberFormatException e) {
             e.printStackTrace();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }*/
+        }
+        return full;
+    }*/
+
+    public static void main(String[] args) {
+        //System.out.println(fillOneSpace("data/PlacesTest.csv", "1",6,1));
+    }
 }
-

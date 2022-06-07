@@ -5,90 +5,226 @@
  */
 package app;
 
-import java.io.BufferedReader;
+import com.itextpdf.text.Document;
+import com.itextpdf.text.DocumentException;
+import com.itextpdf.text.Font;
+import com.itextpdf.text.Paragraph;
+import com.itextpdf.text.pdf.BaseFont;
+import com.itextpdf.text.pdf.PdfWriter;
 import java.io.File;
-import java.io.FileReader;
+import java.io.FileOutputStream;
 import java.io.IOException;
-import java.io.PrintWriter;
+import java.time.*;
+import java.time.format.DateTimeFormatter;
 import utils.FileTools;
 
 /**
- *
+ * Class that stores and creates appointments
  * @author Uživatel
  */
-public class Appointment {
+interface AppointmentInterface{
+     String person = "Člověk";
+     String place = "místo";
+     String adress = "Praha 1";
+     int day = 30;
+     int month = 11;
+     int hour = 12;
+     boolean isTest = false;
+}
+enum Gender{
+    M,F;
+}
+/**
+ * Class that creates apointment from data
+ * @author Uživatel
+ */
+public class Appointment implements AppointmentInterface{
     String person;
     String place;
+    String adress;
     int day;
     int hour;
     boolean isTest;
-    public Appointment(String person,String place,int day, int hour, boolean isTest){
-        this.person=person;
-        this.place=place;
-        this.day=day;
-        this.hour=hour;
-        this.isTest=isTest;
+    String gender;
+/**
+ * 
+ * @param person
+ * @param place
+     * @param adress
+ * @param day
+ * @param hour
+ * @param isTest
+ * @param gender 
+ */
+    public Appointment(String person, String place, String adress, int day, int hour, boolean isTest, String gender) {
+        this.person = person;
+        this.place = place;
+        this.adress = adress;
+        this.day = day;
+        this.hour = hour;
+        this.isTest = isTest;
+        this.gender = gender;
     }
-    public static void createInvite(Appointment apo) throws IOException{
-        File f =new File("data/Invitations/"+ apo.person + "pozvanka.csv");
-        if(!f.exists()){
-           f.createNewFile();
+    /**
+     * Creates Invitation in txt,pdf and as a output
+     * @throws IOException
+     * @throws DocumentException 
+     */
+    public void createInvite() throws IOException, DocumentException {
+        File ftxt = new File("data/Invitations/" + getPerson() + "pozvanka.csv");
+        File fpdf = new File("data/Invitations/" + getPerson() + "pozvanka.pdf");
+        if (!ftxt.exists()) {
+            ftxt.createNewFile();
         }
-         String testocko = (apo.isTest)?("testování"):("očkování");
-         String testockoadj = (apo.isTest)?("testovacího"):("očkovacího");
-         int plusone = apo.hour+1;
-         String invitationText="Vážený Pane/Vážená Paní " + apo.person + ",\n toto je vaše pozvánka na " + testocko + " proti onemocnění COVID-19. Počet dní zbývajících do "+ testocko +": "+ apo.day +".\n Na "
-                 + testocko +" se dostavte mezi "+ apo.hour +":00 a "+ plusone + ":00 do " + testockoadj + " zařízení " + apo.place + ".\n Těšíme se na vás.\n Ministerstvo zdravotnictví.";
-        FileTools.writeToFile(f, invitationText);
-        String dir = (apo.isTest)?("data/TestTimeTables/"):("data/VacTimeTables/");
-        File d = new File(dir+apo.place+".csv");
-        BufferedReader br = new BufferedReader(new FileReader(d));
-        PrintWriter pw = new PrintWriter(d);
-            String line;
-            int i=0;
-            while ((line = br.readLine()) != null) {
-                if(i==apo.day-1){
-                String[] data = line.split(",");
-                int[] numbers = new int[data.length];
-                for(int k = 0;k < data.length;k++){
-                    if(!(k==apo.hour)){
-                    numbers[k] = Integer.parseInt(data[k]);
-                    }else{
-                       numbers[k] = Integer.parseInt(data[k])-1; 
-                    }
-                }
-                
-                }
-                i++;
-            }
-        System.out.println(invitationText);
+        String testocko = (isIsTest()) ? ("testování") : ("očkování");
+        String testockoadj = (isIsTest()) ? ("testovacího") : ("očkovacího");
+        String g;
+        if (getGender().equals(Gender.F.toString())){
+            g = "Vážená Paní ";
+        } else {
+            g = "Vážený Pane ";
+        }
+        
+        DateTimeFormatter dtf = DateTimeFormatter.ofPattern("d.M");
+        int plusone = getHour() + 1;
+        LocalDate today = LocalDate.now();
+        LocalDate apoday = today.plusDays(getDay());
+        DateTimeFormatter dtfl = DateTimeFormatter.ofPattern("d.M.yyyy");
+        StringBuilder sb1 = new StringBuilder();
+        StringBuilder sb2 = new StringBuilder();
+        StringBuilder sb3 = new StringBuilder();
+        StringBuilder sb4 = new StringBuilder();
+        sb1.append(g);
+        sb1.append(getPerson());
+        sb1.append(","); 
+        sb2.append("toto je vaše pozvánka na ");
+        sb2.append(testocko);
+        sb2.append(" proti onemocnění COVID-19.");
+        sb3.append("Na ");
+        sb3.append(testocko);
+        sb3.append(" se dostavte ");
+        sb3.append(apoday.format(dtf));
+        sb3.append(". mezi ");
+        sb3.append(getHour());
+        sb3.append(":00 a ");
+        sb3.append(plusone);
+        sb3.append(":00 do ");
+        sb3.append(testockoadj);
+        sb3.append(" zařízení ");
+        sb3.append(getPlace());
+        sb3.append(", ");
+        sb3.append(getAdress());
+        sb3.append(".");
+        sb4.append(" Těšíme se na vás.\n Ministerstvo zdravotnictví.");
+        sb4.append(" Dne ");
+        sb4.append(today.format(dtfl));
+        String fullText= sb1.toString() + "\n" + sb2.toString() + "\n" + sb3.toString() + "\n" + sb4.toString();
+        FileTools.writeToFile(ftxt, fullText);
+        System.out.println(fullText);
+        Document document = new Document();
+        PdfWriter.getInstance(document, new FileOutputStream(fpdf));
+        document.open();
+        BaseFont helvetica = BaseFont.createFont(BaseFont.HELVETICA, BaseFont.CP1250, BaseFont.EMBEDDED);
+        Font font = new Font(helvetica, 12);
+        document.add(new Paragraph(sb1.toString(),font));
+        document.add(new Paragraph(sb2.toString(),font));
+        document.add(new Paragraph(sb3.toString(),font));
+        document.add(new Paragraph(sb4.toString(),font));
+        document.close();
+    }
+/**
+ * 
+ * @param person 
+ */
+    public void setPerson(String person) {
+        this.person = person;
+    }
+/**
+ * 
+ * @param month 
+ */
+    public String getAdress() {
+        return adress;
+    }
+    
+/**
+ * 
+ * @param isTest 
+ */
+    public void setIsTest(boolean isTest) {
+        this.isTest = isTest;
+    }
+/**
+ * 
+ * @param gender 
+ */
+    public void setGender(String gender) {
+        this.gender = gender;
+    }
+/**
+ * 
+ * @return 
+ */
+    public String getPerson() {
+        return person;
     }
 
+/**
+ * 
+ * @return 
+ */
+    public boolean isIsTest() {
+        return isTest;
+    }
+/**
+ * 
+ * @return 
+ */
+    public String getGender() {
+        return gender;
+    }
+/**
+ * 
+ * @param place 
+ */
     public void setPlace(String place) {
         this.place = place;
     }
-
-
+/**
+ * 
+ * @param day 
+ */
     public void setDay(int day) {
         this.day = day;
     }
-
+/**
+ * 
+ * @param hour 
+ */
     public void setHour(int hour) {
         this.hour = hour;
     }
-
+/**
+ * 
+ * @return 
+ */
     public String getPlace() {
         return place;
     }
-
-
+/**
+ * 
+ * @return 
+ */
     public int getDay() {
         return day;
     }
-
+/**
+ * 
+ * @return 
+ */
     public int getHour() {
         return hour;
     }
-    
-}
 
+
+}
