@@ -1,7 +1,7 @@
 # CovidRegistrace
 ## Zadání práce
 ### Popis problému
-Program CovidRegistrace bude mít za účel provádět registraci pacientů na testování a očkování proti onemocnění COVID-19. Vstupem bude textový soubor obsahující seznam míst, kde se lze očkovat nebo testovat. V programu půjde také zjistit kdy bude muset pacient na další očkování a na jak dlouho mu vydrží očkování nebo test. Pacient zadá do systému:
+Program CovidRegistrace bude mít za účel provádět registraci pacientů na očkování proti onemocnění COVID-19. Vstupem bude textový soubor obsahující seznam míst, kde se lze očkovat. Pacient zadá do systému:
 * povinně
   * jméno
   * příjmení
@@ -11,16 +11,18 @@ Program CovidRegistrace bude mít za účel provádět registraci pacientů na t
   * uživatelské jméno a heslo
 * Dále si pacient vybere zda:
   * se chce očkovat
-  * testovat
+  * zkontrolovat na které termíny je objednán
   * nebo jen zkontrolovat svoje údaje
 * Pokud se chce pacient očkovat nebo testovat: 
+  * Vybere si datum
   * Napíše město a místo, ve kterém by se chtěl nechat očkovat
-  * Vybere si datum a čas
+  * Vybere si čas
 
-Pro každého pacienta bude vygenerována pozvánka v pdf k očkování či testování s údaji o místu, typu očkování a datumu, který si vybrali.
+Pro každého pacienta bude vygenerována pozvánka v pdf k očkování s údaji o místu, typu očkování a datumu, který si vybrali.
 ## Řešení
 ### Funkční specifikace
-Aplikace he tvořena přihlašovacím menu a hlavním menu. Uživatel zadává výběr především pomocí čísla. Uživatel se buď zaregistruje nebo přihlásí. Dále si uživatel vybere zda chce vygenerovat pozvánku na testování nebo očkování nebo jen zkontrolovat svoje přihlašovací údaje. V generaci pozvánky si uživatel vybere zařízení z nabídky a zadá za kolik dní  a v kolik by si návštěvu přál.
+Aplikace je tvořena přihlašovacím menu a hlavním menu. Uživatel zadává výběr především pomocí čísla. Uživatel se buď zaregistruje nebo přihlásí. Dále si uživatel vybere zda chce vygenerovat pozvánku na testování nebo jen zkontrolovat svoje termíny nebo přihlašovací údaje. V generaci pozvánky si uživatel vybere zařízení z nabídky a zadá datum
+a čas, kdy by návštěvu přál.
 * Přihlašovací menu
    *  `1` Zaregistrovat
       *  `String` uživatelské jméno 
@@ -36,18 +38,22 @@ Aplikace he tvořena přihlašovacím menu a hlavním menu. Uživatel zadává v
       *  `String` heslo
    *  `0` Konec  
 * Hlavní menu
-   *  `1` Očkování
-   *  `2` Testování
+   *  `1` Zapsat termín na očkování
+       *   `1-30` den
+       *   `1-12` měsíc
+       *   `číslo` rok
+       *   `1-147` místo ze seznamu
+       *   `6-17` hodina očkování
+   *  `2` Zkontrolovat Vaše termíny
    *  `3` Zkotrolovat profil
    *  `0` Konec
-* Očkování/Testování 
-   *  `číslo ze seznamu` Místo očkování/testování 
-   *  `číslo 1-31` Den očkování/testování 
-   *  `číslo 6-17` Hodina očkování/testování 
+   
 ### Popis struktury vstupních a výstupních souborů
-* program čte PlacesVac.csv a PlacesTest.csv v \data, ve kterých jsou vypsané očkovací a testovací stanice
+* program čte PlacesVac.csv v \data, ve kterých jsou vypsané očkovací stanice
    * ty obsahují pořadové číslo, název a adresu
 * Výstupem je pdf,txt soubor a výpis na konzoli s pozvánkou na očkování/testování s datumem, časem, místem, oslovením a dnešním datem
+* dalším výstupem jsou csv soubory nazvané datumem ve složce dates (např. Dates\12-06-2022.csv) které obsahují počet volných míst v daný datum, na daném místě v danou hodinu
+* další výstup je soubor Apointments.csv který obsahuje seznam všech vzniklých objednání na očkování
 
 ### Class diagram
 ![Screenshot - 08_06_2022 , 0_37_50](https://user-images.githubusercontent.com/92588479/172494894-dfa3acae-8bcf-4161-bb78-5f2521b5ac32.png)
