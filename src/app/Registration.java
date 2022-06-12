@@ -16,24 +16,29 @@ import java.io.FileWriter;
 import java.util.ArrayList;
 import java.util.Arrays;
 
-interface RegistrationInterface{
-     String register() throws FileNotFoundException;
-     String login();
+interface RegistrationInterface {
+
+    void register() throws FileNotFoundException;
+
+    Person login();
 }
+
 /**
  * Class that handles user registration, login and access to login information
+ *
  * @author Uživatel
  */
-public class Registration implements RegistrationInterface{
-/**
- * Method used to register the user, returns users login
- * @return
- * @throws FileNotFoundException 
- */
+public class Registration implements RegistrationInterface {
+
+    /**
+     * Method used to register the user, returns users login
+     *
+     * @throws FileNotFoundException
+     */
     @Override
-    public String register() throws FileNotFoundException {
+    public void register() throws FileNotFoundException {
         Scanner sc = new Scanner(System.in);
-        String login = "";
+        Person login;
         System.out.println("Zadejte uživatelské jméno: ");
         String uname = sc.nextLine();
 
@@ -48,19 +53,15 @@ public class Registration implements RegistrationInterface{
 
         System.out.println("Zadejte příjmení: ");
         String surName = sc.nextLine();
-        
+
         System.out.println("Zadejte pohlaví: (M/F) ");
         String gender = sc.nextLine();
-        
+
         System.out.println("Zadejte email: ");
         String email = sc.nextLine();
         System.out.println("Zadejte rodné číslo: ");
         int pid = sc.nextInt();
         sc.nextLine();
-        System.out.println("Byli jste již očkováni?(a/n) ");
-        boolean vac = Character.toLowerCase(sc.nextLine().charAt(0)) != 'n';
-        System.out.println((vac) ? ("ano") : ("ne"));
-
         name = name.trim();
         surName = surName.trim();
         gender = gender.trim().toUpperCase();
@@ -71,10 +72,8 @@ public class Registration implements RegistrationInterface{
 
         String x = uname + " " + pass;
         if (pass.equals(conPass) || email.contains("@") || gender.equals("M") || gender.equals("F")) {
-
             File f = new File("data/Registration.txt");
             Scanner content = new Scanner(f);
-
             int flag = 0;
             while (content.hasNextLine()) {
                 String data = content.nextLine();
@@ -98,7 +97,7 @@ public class Registration implements RegistrationInterface{
             if (flag == 0) {
                 try {
                     BufferedWriter out = new BufferedWriter(new FileWriter("data/Registration.txt", true));
-                    out.write(uname + "," + pass + "," + name + "," + surName + "," + gender + "," + email + "," + pid + "," + String.valueOf(vac) + "\n");
+                    out.write(uname + "," + pass + "," + name + "," + surName + "," + gender + "," + email + "," + pid + "," + "\n");
                     out.close();
                 } catch (IOException e) {
                     System.out.println("Vyskytla se vyjímka." + e);
@@ -106,6 +105,7 @@ public class Registration implements RegistrationInterface{
 
                 System.out.println("Úspěšně zaregistrováni.");
                 System.out.println("Prosím přihlašte se.");
+
                 login = this.login();
             }
 
@@ -122,15 +122,16 @@ public class Registration implements RegistrationInterface{
                 System.out.println("Vyberte platnou možnost.");
             }
         }
-        return login;
     }
-/**
- * Login method, returns username
- * @return 
- */
-    @Override
-    public String login() {
 
+    /**
+     * Login method, returns username
+     *
+     * @return
+     */
+    @Override
+    public Person login() {
+        Person p = null;
         Scanner sc = new Scanner(System.in);
         System.out.println("Zadejte uživatelské jméno: ");
         String uname = sc.nextLine();
@@ -141,7 +142,6 @@ public class Registration implements RegistrationInterface{
         String x = uname.concat(pass);
 
         try {
-
             File f = new File("data/Registration.txt");
             Scanner content = new Scanner(f);
             int flag = 0;
@@ -152,6 +152,7 @@ public class Registration implements RegistrationInterface{
                 if (unamepass.equals(x)) {
                     System.out.println("Přihlášení úspěšné");
                     System.out.println("Vítejte v systému CovidRegistrace");
+                    p = new Person(data[0], data[1], data[2], data[3], data[4], data[5], Integer.valueOf(data[6]));
                     flag = 1;
                     break;
                 }
@@ -169,22 +170,23 @@ public class Registration implements RegistrationInterface{
                     System.out.println("Vyberte platnou možnost.");
                 }
             }
-
         } catch (FileNotFoundException e) {
 
             System.out.println("Chyba.");
             e.printStackTrace();
         }
 
-        return uname;
+        return p;
     }
-/**
- * Method used to get more info about the user
- * @param uname
- * @return
- * @throws FileNotFoundException
- * @throws IOException 
- */
+
+    /**
+     * Method used to get more info about the user
+     *
+     * @param uname
+     * @return
+     * @throws FileNotFoundException
+     * @throws IOException
+     */
     public static ArrayList<String> getLoginInfo(String uname) throws FileNotFoundException, IOException {
         BufferedReader br = new BufferedReader(new FileReader("data/Registration.txt"));
         String line;

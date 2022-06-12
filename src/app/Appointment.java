@@ -11,8 +11,10 @@ import com.itextpdf.text.Font;
 import com.itextpdf.text.Paragraph;
 import com.itextpdf.text.pdf.BaseFont;
 import com.itextpdf.text.pdf.PdfWriter;
+import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileOutputStream;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.time.*;
 import java.time.format.DateTimeFormatter;
@@ -23,13 +25,8 @@ import utils.FileTools;
  * @author Uživatel
  */
 interface AppointmentInterface{
-     String person = "Člověk";
-     String place = "místo";
-     String adress = "Praha 1";
      int day = 30;
-     int month = 11;
      int hour = 12;
-     boolean isTest = false;
 }
 enum Gender{
     M,F;
@@ -39,31 +36,22 @@ enum Gender{
  * @author Uživatel
  */
 public class Appointment implements AppointmentInterface{
-    String person;
-    String place;
-    String adress;
-    int day;
+    Person person;
+    Place place;
+    LocalDate date;
     int hour;
-    boolean isTest;
-    String gender;
 /**
  * 
  * @param person
  * @param place
-     * @param adress
- * @param day
- * @param hour
- * @param isTest
- * @param gender 
+ * @param date
+ * @param hour 
  */
-    public Appointment(String person, String place, String adress, int day, int hour, boolean isTest, String gender) {
+    public Appointment(Person person, Place place, LocalDate date, int hour) {
         this.person = person;
         this.place = place;
-        this.adress = adress;
-        this.day = day;
+        this.date = date;
         this.hour = hour;
-        this.isTest = isTest;
-        this.gender = gender;
     }
     /**
      * Creates Invitation in txt,pdf and as a output
@@ -71,15 +59,13 @@ public class Appointment implements AppointmentInterface{
      * @throws DocumentException 
      */
     public void createInvite() throws IOException, DocumentException {
-        File ftxt = new File("data/Invitations/" + getPerson() + "pozvanka.csv");
-        File fpdf = new File("data/Invitations/" + getPerson() + "pozvanka.pdf");
+        File ftxt = new File("data/Invitations/" + getPerson().getName() + "pozvanka.csv");
+        File fpdf = new File("data/Invitations/" + getPerson().getName() + "pozvanka.pdf");
         if (!ftxt.exists()) {
             ftxt.createNewFile();
         }
-        String testocko = (isIsTest()) ? ("testování") : ("očkování");
-        String testockoadj = (isIsTest()) ? ("testovacího") : ("očkovacího");
         String g;
-        if (getGender().equals(Gender.F.toString())){
+        if (getPerson().getGender().equals(Gender.F.toString())){
             g = "Vážená Paní ";
         } else {
             g = "Vážený Pane ";
@@ -88,32 +74,26 @@ public class Appointment implements AppointmentInterface{
         DateTimeFormatter dtf = DateTimeFormatter.ofPattern("d.M");
         int plusone = getHour() + 1;
         LocalDate today = LocalDate.now();
-        LocalDate apoday = today.plusDays(getDay());
+        LocalDate apoday = getDate();
         DateTimeFormatter dtfl = DateTimeFormatter.ofPattern("d.M.yyyy");
         StringBuilder sb1 = new StringBuilder();
         StringBuilder sb2 = new StringBuilder();
         StringBuilder sb3 = new StringBuilder();
         StringBuilder sb4 = new StringBuilder();
         sb1.append(g);
-        sb1.append(getPerson());
+        sb1.append(getPerson().getName());
         sb1.append(","); 
-        sb2.append("toto je vaše pozvánka na ");
-        sb2.append(testocko);
-        sb2.append(" proti onemocnění COVID-19.");
-        sb3.append("Na ");
-        sb3.append(testocko);
-        sb3.append(" se dostavte ");
+        sb2.append("toto je vaše pozvánka na očkování proti onemocnění COVID-19.");
+        sb3.append("Na očkování se dostavte ");
         sb3.append(apoday.format(dtf));
         sb3.append(". mezi ");
         sb3.append(getHour());
         sb3.append(":00 a ");
         sb3.append(plusone);
-        sb3.append(":00 do ");
-        sb3.append(testockoadj);
-        sb3.append(" zařízení ");
-        sb3.append(getPlace());
+        sb3.append(":00 do očkovacího zařízení ");
+        sb3.append(getPlace().getName());
         sb3.append(", ");
-        sb3.append(getAdress());
+        sb3.append(getPlace().getAdress());
         sb3.append(".");
         sb4.append(" Těšíme se na vás.\n Ministerstvo zdravotnictví.");
         sb4.append(" Dne ");
@@ -132,70 +112,44 @@ public class Appointment implements AppointmentInterface{
         document.add(new Paragraph(sb4.toString(),font));
         document.close();
     }
+    public void createAppointment(){
+        DateTimeFormatter dtfl = DateTimeFormatter.ofPattern("dd-MM-yyyy");
+        String dateform = getDate().format(dtfl);
+        try {
+                    BufferedWriter out = new BufferedWriter(new FileWriter("data/Appointments.csv", true));
+                    out.write(getPerson().uname + "," + getPerson().name + "," + dateform + "," + getHour() + ":00-" + (getHour()+1) + ":00," + getPlace().name + "," + getPlace().adress + "\n");
+                    out.close();
+                } catch (IOException e) {
+                    System.out.println("Vyskytla se vyjímka." + e);
+                }
+    }
 /**
  * 
  * @param person 
  */
-    public void setPerson(String person) {
+    public void setPerson(Person person) {
         this.person = person;
     }
 /**
  * 
- * @param month 
- */
-    public String getAdress() {
-        return adress;
-    }
-    
-/**
- * 
- * @param isTest 
- */
-    public void setIsTest(boolean isTest) {
-        this.isTest = isTest;
-    }
-/**
- * 
- * @param gender 
- */
-    public void setGender(String gender) {
-        this.gender = gender;
-    }
-/**
- * 
  * @return 
  */
-    public String getPerson() {
+    public Person getPerson() {
         return person;
-    }
-
-/**
- * 
- * @return 
- */
-    public boolean isIsTest() {
-        return isTest;
-    }
-/**
- * 
- * @return 
- */
-    public String getGender() {
-        return gender;
     }
 /**
  * 
  * @param place 
  */
-    public void setPlace(String place) {
+    public void setPlace(Place place) {
         this.place = place;
     }
 /**
  * 
- * @param day 
+ * @param date 
  */
-    public void setDay(int day) {
-        this.day = day;
+    public void setDate(LocalDate date) {
+        this.date = date;
     }
 /**
  * 
@@ -208,15 +162,15 @@ public class Appointment implements AppointmentInterface{
  * 
  * @return 
  */
-    public String getPlace() {
+    public Place getPlace() {
         return place;
     }
 /**
  * 
  * @return 
  */
-    public int getDay() {
-        return day;
+    public LocalDate getDate() {
+        return date;
     }
 /**
  * 

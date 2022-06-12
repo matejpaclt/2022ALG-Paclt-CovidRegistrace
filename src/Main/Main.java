@@ -6,6 +6,7 @@
 package Main;
 
 import java.io.IOException;
+import java.text.ParseException;
 
 
 
@@ -17,8 +18,10 @@ public class Main {
 
     /**
      * @param args the command line arguments
+     * @throws java.io.IOException
+     * @throws java.text.ParseException
      */
-    public static void main(String[] args) throws IOException   {
+    public static void main(String[] args) throws IOException, ParseException   {
         ui.UI.menu();
 }
 }

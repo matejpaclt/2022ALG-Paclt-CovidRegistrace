@@ -5,125 +5,108 @@
  */
 package app;
 
-import java.io.BufferedReader;
-import java.io.FileReader;
-import java.io.IOException;
-import java.util.ArrayList;
+import java.time.LocalDate;
 import java.util.Collections;
 import java.util.List;
-
-
+import static utils.FileTools.*;
 
 /**
  * Class that stores number, name and adress of a place
+ *
  * @author Uživatel
  */
-public class Place implements Comparable<Place>{
+public class Place implements Comparable<Place> {
+
     String number;
     String name;
     String adress;
-    String full;
+    int availableAmount;
+
     /**
      * Place constructor
+     *
      * @param number
-     * @param name 
-     * @param adress 
+     * @param name
+     * @param adress
      */
-    public Place(String number, String name, String adress, String full) {
-         this.number=number;
-         this.name=name;
-         this.adress=adress;
-         this.full=full;
+    public Place(String number, String name, String adress) {
+        this.number = number;
+        this.name = name;
+        this.adress = adress;
     }
-/**
- * Number getter
- * @return 
- */
+
+    /**
+     * Number getter
+     *
+     * @return
+     */
     public String getNumber() {
         return number;
     }
 
-    public String getFull() {
-        return full;
-    }
-
-
-/**
- * Adress getter
- * @return 
- */
+    /**
+     * Adress getter
+     *
+     * @return
+     */
     public String getAdress() {
         return adress;
     }
-    
-/**
- * Name getter
- * @return 
- */
+
+    /**
+     * Name getter
+     *
+     * @return
+     */
     public String getName() {
         return name;
-   }
-/**
- * Number setter
- * @param number 
- */
+    }
+
+    public int getAvailableAmount() {
+        return availableAmount;
+    }
+
+    /**
+     * Number setter
+     *
+     * @param number
+     */
     public void setNumber(String number) {
         this.number = number;
     }
-/**
- * Name setter
- * @param name 
- */
+
+    /**
+     * Name setter
+     *
+     * @param name
+     */
     public void setName(String name) {
         this.name = name;
     }
+
+    public void setAvailableAmount(int availableAmount) {
+        this.availableAmount = availableAmount;
+    }
+
     /**
-     * Reads lines from csv file and returns them in a list
-     * @param fileName
-     * @return 
+     * creates one instance of place with its number and place name
+     *
+     * @param args
      */
-    public static List<Place> readPlacesFromCSV (String fileName) {
-        List<Place> places = new ArrayList<>(); 
-        try (BufferedReader br = new BufferedReader(new FileReader(fileName))) {
-            String line = br.readLine();
-            while (line != null) {
-                String[] attributes = line.split(",");
-                Place place = createPlace(attributes);
-                places.add(place);
-                line = br.readLine();
-            }
-
-        } catch (IOException ioe) {
-            ioe.printStackTrace();
-        }
-
-        return places;
-    }
-/**
- * creates one instance of place with its number and place name 
- * @param metadata
- * @return 
- */
-    private static Place createPlace(String[] metadata) {
-        String number = metadata[0];
-        String place = metadata[1];
-        String adress = metadata[2];
-        String full = metadata[3];
-        return new Place(number, place,adress,full);
-    }
-        
-public static void main(String... args) {
+    public static void main(String... args) {
         List<Place> places = readPlacesFromCSV("data/PlacesVac.csv");
         Collections.sort(places);
         for (Place p : places) {
             System.out.println(p.getNumber() + p.getName());
         }
     }
-/**
- * CompareTo method, descending order sorting
- * @param o
- * @return 
- */
+
+    /**
+     * CompareTo method, descending order sorting
+     *
+     * @param o
+     * @return
+     */
     @Override
     public int compareTo(Place o) {
         int thisnum = Integer.parseInt(this.number);
@@ -131,6 +114,5 @@ public static void main(String... args) {
         return thisnum - onum;
 
     }
-
 
 }

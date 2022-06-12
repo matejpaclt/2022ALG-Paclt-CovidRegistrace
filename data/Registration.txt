@@ -10,3 +10,4 @@ Petr,Omacka,Petr,Omacka,M,petr.omacka@gmail.com,1234,false
 Kuba,Brambor,Kuba,Klimo,M,klimojakub97@gmail.com,151654,true
 filkra,passwd,Filip,Kr�l,M,filip.kral@post.cz,111112,true
 testr,asdf,tester,two,F,example@email.cz,1111111111,true
+karel,borec1234,Karel,Borovsk�,M,karel.borovsky@seznam.cz,178142145,
