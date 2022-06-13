@@ -48,12 +48,24 @@ a čas, kdy by návštěvu přál.
    *  `3` Zkotrolovat profil
    *  `0` Konec
    
-### Popis struktury vstupních a výstupních souborů
+### Popis struktury vstupních souborů
 * program čte PlacesVac.csv v \data, ve kterých jsou vypsané očkovací stanice
-   * ty obsahují pořadové číslo, název a adresu
-* Výstupem je pdf,txt soubor a výpis na konzoli s pozvánkou na očkování/testování s datumem, časem, místem, oslovením a dnešním datem
-* dalším výstupem jsou csv soubory nazvané datumem ve složce dates (např. Dates\12-06-2022.csv) které obsahují počet volných míst v daný datum, na daném místě v danou hodinu
+   * ty obsahují pořadové číslo, název a adresu, jsou oddělené čárkou a jsou ve formátu (int,String,String)
+ ![Screenshot 2022-06-13 151730](https://user-images.githubusercontent.com/92588479/173363185-168f56e4-f27f-4a5f-a857-2aa23facee2c.jpg)
+ 
+### Popis struktury výstupních souborů
+* Výstupem je pdf a txt soubor s pozvánkou na očkování s datumem, časem, místem, oslovením a dnešním datem, nachází se ve složce data\invitations, pro každého uživatele se tvoří zvlášť (data\invitations\usernamepozvanka.pdf).
+![Screenshot 2022-06-13 151730](https://user-images.githubusercontent.com/92588479/173363256-a220bf0f-4234-4abf-9140-ba57370f7bb0.jpg)
+![Screenshot 2022-06-13 151958](https://user-images.githubusercontent.com/92588479/173363271-c5f4377d-a50a-48cb-a64f-42bc59a31f7f.jpg)
+
+* dalším výstupem jsou csv soubory nazvané datumem ve složce dates (např. Dates\12-06-2022.csv) které obsahují počet volných míst v daný datum, na daném místě v danou hodinu, jdou oddělené čárkou, dvanáct čísel na řádku, každý řádek reprezentuje jednu lokaci, čísla musí být větší nebo rovna 0 (int,int,int,int,int,int,int,int,int,int,int,int,)
+* ![Screenshot 2022-06-13 152044](https://user-images.githubusercontent.com/92588479/173364121-b7d76b5b-c558-4593-8fc1-a6d8b5bf908b.jpg)
+
 * další výstup je soubor Apointments.csv který obsahuje seznam všech vzniklých objednání na očkování
+   * oddělené čárkou v následujícím formátu: username,surname,time,place,adress
+![Screenshot 2022-06-13 152852](https://user-images.githubusercontent.com/92588479/173364571-9a19d10b-ba03-408f-91ad-c46b7138d3e5.jpg)
+
+
 
 ### Class diagram
 ![Screenshot - 08_06_2022 , 0_37_50](https://user-images.githubusercontent.com/92588479/172494894-dfa3acae-8bcf-4161-bb78-5f2521b5ac32.png)
